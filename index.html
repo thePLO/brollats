@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/15ab96be69.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="source/img/logos/logo_1_c3.png">
+
+  <link href="style/general.css" rel="stylesheet">
+  <link href="style/topNav.css" rel="stylesheet">
+
+  <link href="style/seccioInici.css" rel="stylesheet">
+  <link href="style/seccioActivitats.css" rel="stylesheet">
+  <link href="style/seccioCalendari.css" rel="stylesheet">
+  <link href="style/seccioBono.css" rel="stylesheet">
+  <link href="style/seccioLloguer.css" rel="stylesheet">
+  <link href="style/seccioContacte.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a onclick="button(1)" class="icon button"> <i class="fa fa-bars"></i> </a>
+    <a onclick="button(0)" class="button" href="#inici"> <img src="source/img/logo_inici.png"> </a>
+    <a onclick="button(0)" class="button" href="#activitats">Activitats</a>
+    <a onclick="button(0)" class="button" href="#calendari">Calendari</a>
+    <a onclick="button(0)" class="button" href="#bono">Bono regal</a>
+    <a onclick="button(0)" class="button" href="#lloguer">Lloguer de material</a>
+    <a onclick="button(0)" class="button" href="#contacte">Contacte</a>
+    <div class="socialIconContainer">
+      <a class="socialIcon" href="https://www.instagram.com/brollats/" id="instagram"> <i class="fab fa-instagram fa-2x"></i> </a>
+      <a class="socialIcon" href="https://www.facebook.com/brollats-101131178785251"> <i class="fab fa-facebook-f fa-2x"></i> </a>
+      <a class="socialIcon" href="https://twitter.com/brollats"> <i class="fab fa-twitter fa-2x"></i> </a>
+      <a class="socialIcon" href="https://api.whatsapp.com/send?phone=34644433597&text=En%20que%20et%20podem%20ajudar?" id="whatsapp"> <i class="fab fa-whatsapp fa-2x"></i> </a>
+    </div>
+  </div><script src="script/topNav.js"></script>
+  <div class="spacer"></div>
+
+  <a class="anchor" id="inici"></a>
+  <section id="sInici">
+    <img src="source/img/slideInici/foto (1).webp" class="active">
+    <img src="source/img/slideInici/foto (2).webp">
+    <!--<img src="source/img/slideInici/foto (3).webp">-->
+    <img src="source/img/slideInici/foto (4).webp">
+    <!--<img src="source/img/slideInici/foto (5).webp">-->
+    <!--<img src="source/img/slideInici/foto (6).webp">-->
+    <img src="source/img/slideInici/foto (7).webp">
+    <img src="source/img/slideInici/foto (8).webp">
+  </section><script src="script/slideFotosInici.js"></script>
+
+  <a class="anchor" id="activitats"></a>
+  <section id="sActivitats">
+
+    <div id="activitats">
+      <div class="hist">Activitats</div>
+      <p>Vies ferrades, barranquisme, escalada...Entra i descobreix totes les activitats que oferim des de Brollats, segur que trobes la teva!<br>
+      Totes les nostres activitats inclouen guia titulat inscrit en el ROPEC, assegurança tant de responsabilitiat civil i d'accidents, tot el material necessari i de seguretat  i un petit reportatge fotogràfic a mans del guia.</p>
+      <div class="containerFlex" id="containerTipus"></div>
+      <hr>
+      <div class="containerFlex" id="containerDestacades"></div>
+    </div>
+    <script src="script/activitats.js"></script>
+
+    <!--
+    --
+    <div id="ferrades">
+      <div><i class="fas fa-arrow-circle-left"></i> | Activitats > Ferrades</div>
+      <p>Les vies ferrades consisteixen en itineraris equipats per les parets amb diversos materials: claus, grapes, preses, passamans, ponts, escales penjant... vols saber-ne més? En una ferrada trobaràs esport i diversió en una mateixa activitat. Vine i gaudeix amb nosaltres de les millors ferrades de Catalunya!<br>
+      El preu de les nostres activitats inclouen guia titulat inscrit en el ROPEC, assegurança tant de responsabilitiat civil com d'accidents, tot el material necessari i de seguretat per la realització de l'activitat i un petit reportatge fotogràfic a mans del guia.</p>
+      <ul>
+        <li>Botons <ul>
+            <li>Iniciació: Ideal per un primer contacte, famílies i per grups d'amics sense experiència.</li>
+            <li>Mig/Avançat: Per a persones i grups que ja han tingut un primer contacte amb les vies ferrades</li>
+            <li>Expert: Per a persones atrevides i valentes que tinguin experiencia i bon nivell de condició física</li>
+            <li>Cursos: Cursos de les maniobres necessàries per ser autònom en una via ferrada. (Ràpels, Assegurar...)
+          </ul>
+        </li>
+      </ul>
+    </div>
+    --
+    <div id="ferradesN1" display="none">
+      <div><i class="fas fa-arrow-circle-left"></i> | Activitats > Ferrades > Iniciació</div>
+      Vies Ferrades Iniciació
+      <p>Aquí us deixem la nostre proposta de vies ferrades de nivell mig i avançat:<br>
+        En cas de dubtes o de voler realitzar una activitat no oferida us podeu dirigir a l'apartat de CONTACTE i fer-nos la vostra proposta.<br>
+        El preu de totes les nostres activitats inclouen: guia titula, equip complet de via ferrada i assegurança d'accidents i RC.</p>
+        <br>Activitats
+    </div>
+    --
+    <div id="ferradesN2" display="none">
+      <div><i class="fas fa-arrow-circle-left"></i> | Activitats > Ferrades > Mig</div>
+      Vies Ferrades Mig/Avançat
+        <p>Aquí us deixem la nostre proposta de vies ferrades d'iniciació:<br>
+        En cas de dubtes o de voler realitzar una activitat no oferida us podeu dirigir a l'apartat de CONTACTE i fer-nos la vostra proposta.<br>
+        El preu de totes les nostres activitats inclouen: guia titula, equip complet de via ferrada i assegurança d'accidents i RC.</p>
+        <br>Activitats
+      </ul>
+    </div>
+    --
+    <div id="ferradesN3" display="none">
+      <div><i class="fas fa-arrow-circle-left"></i> | Activitats > Ferrades > Expert</div>
+      Vies Ferrades Mig/Avançat
+        <p>Aquí us deixem la nostre proposta de vies ferrades de nivell expert, les més difícils:<br>
+        *Per la realització d'aquestes activitats cal experiència prèvia i es farà en grups molt reduíts.<br>
+        En cas de dubtes o de voler realitzar una activitat no oferida us podeu dirigir a l'apartat de CONTACTE i fer-nos la vostra proposta.<br>
+        El preu de totes les nostres activitats inclouen: guia titula, equip complet de via ferrada i assegurança d'accidents i RC.</p>
+        <br>Activitats
+      </ul>
+    </div>
+  -->
+
+  </section>
+
+  <a class="anchor" id="calendari"></a>
+  <section id="sCalendari">
+    <div>Calendari</div>
+  </section>
+
+  <a class="anchor" id="bono"></a>
+  <section id="sBono">
+    <div>Bono Regal</div>
+  </section>
+
+  <a class="anchor" id="lloguer"></a>
+  <section id="sLloguer">
+    <div>Lloguer de material</div>
+  </section>
+
+  <a class="anchor" id="contacte"></a>
+  <section id="sContacte">
+    <div>Contacte</div>
+  </section>
+</body>
+
+<footer>  
+
+</footer>
+</html>
