@@ -32,6 +32,22 @@ a:hover {
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
 
+/* ------------------------------------------
+  translate
+--------------------------------------------- */
+
+#google_translate_element{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+    } 
+body {
+    top: 0px !important; 
+    }
 
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
@@ -175,6 +191,8 @@ header {
   width: 100%;
   left: 0;
   top: 0;
+  /*margin-top: 1.5em;*/
+  border-top: solid 1.5em #016fb9;
 }
 
 .logo {
@@ -191,7 +209,7 @@ img.logo {
   padding: 0;
   margin: 0;
   display: inline-block; 
-  //position:static;
+  /*position:static;*/
   float: none; 
 }
 
@@ -334,6 +352,10 @@ a.logo{
     border-top: 0;
     float: left;
     margin: 0;
+  }
+  .nav-collapse a:active,
+  .nav-collapse .active a {
+    box-shadow: inset 0px 80px 20px -50px #016fb9;
   }
   .nav-collapse div.social {
     padding-right: 0em;
