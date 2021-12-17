@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="ca" translate="no">
   <head>
     <meta charset="utf-8">
     <title>Brollats - Guies de muntanya</title>
@@ -37,17 +37,15 @@
       </nav>
     </header>
 
-    <div id="google_translate_element" class="google"></div>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
+    <div id="google_translate_element" class="google"><a onclick='
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
             pageLanguage: "ca",
-            includedLanguages: "es,en",
+            includedLanguages: "ca,es,en",
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
             autoDisplay: false,
-          }, "google_translate_element")
-      }
-    </script>    
+          }, "google_translate_element");}'>-Castellano-</a></div>
+    
 
     <section id="inici">
     <div id="imatgesInici">
@@ -109,7 +107,20 @@
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js"></script>
+    <!--<script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: "ca",
+            includedLanguages: "ca,es,en",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+          }, "google_translate_element");
+          var a = document.querySelector("#google_translate_element select");
+          a.selectedIndex=1;
+          a.dispatchEvent(new Event('change'));
+      }
+    </script>-->    
   </body>
 
   <footer id="footer">
