@@ -123,7 +123,7 @@ section {
   border-bottom: 1px dotted #999;
   text-align: center;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
   overflow-wrap: hidden;
@@ -131,7 +131,7 @@ section {
 }
 
 h1 {
-  margin-bottom: .5em;
+  margin: .5em;
 }
 
 p {
@@ -181,6 +181,57 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
 #calHidded {display: none}
 
 /* ------------------------------------------
+  ACTIVITATS
+--------------------------------------------- */
+
+#container_activitats{
+    min-width: 90%;
+    min-height: 100%;
+    margin-top:5em;
+    margin-bottom:2em;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.activitatItem{
+  margin:0;
+  padding: 0;
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 150px;
+  border: solid 1px black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.activitatItem:hover{
+  border: solid 1px red;
+}
+.activitatItem video {
+  width: 100%;
+  min-height: 100%;
+  top:0; left: 0;
+  position: absolute;
+  object-fit: cover;
+  z-index: -3;
+}
+.activitatItem a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 150px;
+  background-color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  color:#016fb9; 
+}
+
+
+/* ------------------------------------------
   FIXED HEADER
 --------------------------------------------- */
 
@@ -199,7 +250,7 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   text-decoration: none;
   font-weight: bold;
-  //line-height: 55px;
+  /*line-height: 55px;*/
   margin:0;
   color: #fff;
   float: left;
@@ -208,7 +259,7 @@ header {
 img.logo {
   padding: 0;
   margin: 0;
-  display: inline-block; 
+  display: inline-block;
   /*position:static;*/
   float: none; 
 }
@@ -217,13 +268,22 @@ a.logo{
   width:100%;
   height:100%;
   text-align: center;
-  padding-left: 20px;
+  /*margin-left: 50px;*/
   padding-top: 4px;
 }
 
 @media screen and (min-width: 1100px) {
   a.logo{ 
-    width: auto ;
+    width: auto;
+    position:fixed;
+    top:0;
+    left: 10;
+    height:79px;
+  }
+  img.logo {
+    padding-top: 5px;
+    padding-left: 15px;
+    height:60px;
   }
 }
 
@@ -423,6 +483,38 @@ a.logo{
   content: "\78"; /* Close icon */
 }
 
+
+
+.submenu{
+  width: 100%;
+  background: #0098ff;
+  margin-top: 79px;
+  text-decoration: none;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.submenu-item{
+  display: block;
+  padding: 5px 7px;
+}
+.submenu-item.active{
+  background: #69c2ff;
+}
+.submenu-item a{
+  text-decoration: none;
+  color: white;
+}
+@media screen and (min-width: 1100px) {
+  .submenu-item.active {
+    box-shadow: inset 0px 70px 20px -50px #0098ff;
+  }
+}
 
 /* ------------------------------------------
 FOOTER

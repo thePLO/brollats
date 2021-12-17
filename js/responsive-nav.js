@@ -201,7 +201,7 @@
           label: "Menu",                    // String: Label for the navigation toggle
           insert: "before",                 // String: Insert the toggle before or after the navigation
           customToggle: "",                 // Selector: Specify the ID of a custom toggle
-          closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+          closeOnNavClick: true,           // Boolean: Close the navigation when one of the links are clicked
           openPos: "relative",              // String: Position of the opened nav, relative or static
           navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
           navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
@@ -656,4 +656,34 @@
 
   window.responsiveNav = responsiveNav;
 
-}(document, window, 0));
+}(document, window, 0));  
+
+function simulateClick(id) {
+  const event = new MouseEvent('click', {
+    view: window,
+    bubbles: true,
+    cancelable: true
+  });
+  const cb = document.getElementById(id);
+  const cancelled = !cb.dispatchEvent(event);
+
+  if (cancelled) {
+    // A handler called preventDefault.
+    alert("cancelled");
+  } else {
+    // None of the handlers called preventDefault.
+    alert("not cancelled");
+  }
+}
+
+window.onload = function(){
+  //console.log(window.location.hash);
+  if (window.location.hash === '#inici_') document.getElementById('menu1').tap();
+  else if (window.location.hash === '#activitats_') document.getElementById('menu2').click();
+  else if (window.location.hash === '#calendari_') document.getElementById('menu3').click();
+  else if (window.location.hash === '#lloguer_') document.getElementById('menu4').click();
+  else if (window.location.hash === '#contacte_') document.getElementById('menu5').click();
+  //else document.getElementById('menu1').click();
+
+  document.getElementsByClassName('mask')[0].click();
+}

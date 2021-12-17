@@ -20,11 +20,11 @@
       <a href="#inici" class="logo" data-scroll><img src="media\img\logo_inici.png" class="logo" height="45px"></a>
       <nav class="nav-collapse">
         <ul>
-          <li class="menu-item active"><a href="#inici" data-scroll>Inici</a></li>
-          <li class="menu-item"><a href="#activitats" data-scroll>Activitats</a></li>
-          <li class="menu-item"><a href="#calendari" data-scroll>Calendari</a></li>
-          <li class="menu-item"><a href="#lloguer" data-scroll>Lloguer de material</a></li>
-          <li class="menu-item"><a href="#contacte" data-scroll>Contacte</a></li>
+          <li class="menu-item"><a href="#inici" data-scroll id="menu1">Inici</a></li>
+          <li class="menu-item"><a href="#activitats" data-scroll id="menu2">Activitats</a></li>
+          <li class="menu-item"><a href="#calendari" data-scroll id="menu3">Calendari</a></li>
+          <li class="menu-item"><a href="#lloguer" data-scroll id="menu4">Lloguer de material</a></li>
+          <li class="menu-item"><a href="#contacte" data-scroll id="menu5">Contacte</a></li>
           <li class="menu-item">
             <div class="social"> 
                 <a class="social" href="https://www.instagram.com/brollats/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -44,7 +44,7 @@
             pageLanguage: "ca",
             includedLanguages: "es,en",
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
+            autoDisplay: false,
           }, "google_translate_element")
       }
     </script>    
@@ -66,7 +66,24 @@
 
     <section id="activitats">
       <h1>Activitats</h1>
-     
+      <!--<div class="image-block" style="background:url('media/img/slideInici/foto (4).webp') no-repeat center center fixed;/*-webkit-mask-image:url('media/img/logos/alogo_3.png')*/;width: 100%;height: 800px;"></div>-->
+      <p>Vies ferrades, barranquisme, escalada...Entra i descobreix totes les activitats que oferim des de Brollats, segur que trobes la teva!</p>
+      <p>Totes les nostres activitats inclouen guia titulat inscrit en el ROPEC, assegurança tant de responsabilitiat civil i d'accidents, tot el material necessari i de seguretat  i un petit reportatge fotogràfic a mans del guia.</p>
+      <div id="container_activitats"></div>
+
+      <script src="js/activitats.js"></script>
+      <script>
+        /*var videos= document.getElementsByClassName("activitatItem");
+        for (var i=0;i<videos.length;i++){
+          videos[i].addEventListener("mouseover", function() {
+            this.children[0].play();
+          });
+          videos[i].addEventListener("mouseleave", function() {
+            this.children[0].pause();
+          });
+        }*/
+      </script>
+
     </section>
 
     <section id="calendari">
@@ -94,9 +111,9 @@
     <script src="js/fixed-responsive-nav.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
-  
-  <footer>
-    <img src="media\img\logo_inici.png" class="logo" height="45px">
+
+  <footer id="footer">
+    <img src="media\img\logo_inici.png" class="logo">
     <br><br>
     <a href="https://www.instagram.com/brollats/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
     <a href="https://www.facebook.com/brollats-101131178785251" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
