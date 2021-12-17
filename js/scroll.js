@@ -200,6 +200,7 @@ window.smoothScroll = (function (window, document, undefined) {
       });
 
     }
+
   };
 
   // Return public methods
