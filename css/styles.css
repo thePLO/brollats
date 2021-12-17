@@ -35,7 +35,7 @@ a:hover {
 /* ------------------------------------------
   translate
 --------------------------------------------- */
-
+/*
 #google_translate_element{
   position: fixed;
   top: 0;
@@ -48,6 +48,13 @@ a:hover {
 body {
     top: 0px !important; 
     }
+*/
+#idiomaSwapp{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
 
 /* ------------------------------------------
   RESPONSIVE NAV STYLES

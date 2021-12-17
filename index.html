@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="ca" translate="no">
-<meta name="google" content="notranslate">
+<html lang="ca">
+<!--<meta name="google" content="notranslate">-->
   <head>
     <meta charset="utf-8">
     <title>Brollats - Guies de muntanya</title>
@@ -38,8 +38,49 @@
       </nav>
     </header>
 
-    <div id="google_translate_element" class="google"><a href='index.html#es'>-Castellano-</a></div>
-    
+    <button id="idiomaSwapp">castellano</button>
+    <script type="text/javascript">
+      var language = localStorage.getItem('miGato');
+      if (language == null) localStorage.setItem('language', 'ca');
+      document.documentElement.setAttribute('lang', language)
+      var _button = document.querySelector("#idiomaSwapp");
+      function updatebutton(){
+        if(language=='ca'){
+          _button.content = "Español";
+        }else{
+          _button.content = "Català";
+        }
+      }updatebutton();
+      _button.onclick = function(){
+        if(language=='ca'){
+          language = 'es';
+          localStorage.setItem('language', 'es');
+        }else if(language=='es'){
+          language = 'ca';
+          localStorage.setItem('language', 'ca');
+        }
+        updatebutton()
+      };
+    </script>
+
+    <!-- <div id="google_translate_element" class="google"><a href='index.html#es'>-Castellano-</a></div>-->
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js"></script>
+    <!--<script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: "ca",
+            includedLanguages: "ca,es,en",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+          }, "google_translate_element");
+          var a = document.querySelector("#google_translate_element select");
+          a.selectedIndex=1;
+          a.dispatchEvent(new Event('change'));
+      }
+    </script> -->
 
     <section id="inici">
     <div id="imatgesInici">
@@ -96,25 +137,7 @@
 
     <section id="contacte">
       <h1>Contacte</h1>
-    </section>
-
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js"></script>
-    <!--<script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: "ca",
-            includedLanguages: "ca,es,en",
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false,
-          }, "google_translate_element");
-          var a = document.querySelector("#google_translate_element select");
-          a.selectedIndex=1;
-          a.dispatchEvent(new Event('change'));
-      }
-    </script>-->    
+    </section> 
   </body>
 
   <footer id="footer">
