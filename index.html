@@ -1,137 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="cat">
+  <head>
+    <meta charset="utf-8">
+    <title>Brollats - Guies de muntanya</title>
+    <meta name="author" content="Adtile">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://kit.fontawesome.com/15ab96be69.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="media/img/logos/logo_1_c3.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+    <script src="js/responsive-nav.js"></script>
+  </head>
+  <body>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
-  <script src="https://kit.fontawesome.com/15ab96be69.js" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" href="source/img/logos/logo_1_c3.png">
+    <header>
+      <a href="#inici" class="logo" data-scroll><img src="media\img\logo_inici.png" class="logo" height="45px"></a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="menu-item active"><a href="#inici" data-scroll>Inici</a></li>
+          <li class="menu-item"><a href="#activitats" data-scroll>Activitats</a></li>
+          <li class="menu-item"><a href="#calendari" data-scroll>Calendari</a></li>
+          <li class="menu-item"><a href="#lloguer" data-scroll>Lloguer de material</a></li>
+          <li class="menu-item"><a href="#contacte" data-scroll>Contacte</a></li>
+          <li class="menu-item">
+            <div class="social"> 
+                <a class="social" href="https://www.instagram.com/brollats/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="social" href="https://www.facebook.com/brollats-101131178785251" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="social" href="https://twitter.com/brollats" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="social" href="https://api.whatsapp.com/send?phone=34644433597&text=En%20que%20et%20podem%20ajudar?" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <link href="style/general.css" rel="stylesheet">
-  <link href="style/topNav.css" rel="stylesheet">
-
-  <link href="style/seccioInici.css" rel="stylesheet">
-  <link href="style/seccioActivitats.css" rel="stylesheet">
-  <link href="style/seccioCalendari.css" rel="stylesheet">
-  <link href="style/seccioBono.css" rel="stylesheet">
-  <link href="style/seccioLloguer.css" rel="stylesheet">
-  <link href="style/seccioContacte.css" rel="stylesheet">
-</head>
-
-<body>
-  <div class="topnav" id="myTopnav">
-    <a onclick="button(1)" class="icon button"> <i class="fa fa-bars"></i> </a>
-    <a onclick="button(0)" class="button" href="#inici"> <img src="source/img/logo_inici.png"> </a>
-    <a onclick="button(0)" class="button" href="#activitats">Activitats</a>
-    <a onclick="button(0)" class="button" href="#calendari">Calendari</a>
-    <a onclick="button(0)" class="button" href="#bono">Bono regal</a>
-    <a onclick="button(0)" class="button" href="#lloguer">Lloguer de material</a>
-    <a onclick="button(0)" class="button" href="#contacte">Contacte</a>
-    <div class="socialIconContainer">
-      <a class="socialIcon" href="https://www.instagram.com/brollats/" id="instagram"> <i class="fab fa-instagram fa-2x"></i> </a>
-      <a class="socialIcon" href="https://www.facebook.com/brollats-101131178785251"> <i class="fab fa-facebook-f fa-2x"></i> </a>
-      <a class="socialIcon" href="https://twitter.com/brollats"> <i class="fab fa-twitter fa-2x"></i> </a>
-      <a class="socialIcon" href="https://api.whatsapp.com/send?phone=34644433597&text=En%20que%20et%20podem%20ajudar?" id="whatsapp"> <i class="fab fa-whatsapp fa-2x"></i> </a>
+    <section id="inici">
+    <div id="imatgesInici">
+      <img src="media/img/slideInici/foto (1).webp" class="active">
+      <img src="media/img/slideInici/foto (2).webp">
+      <!--<img src="media/img/slideInici/foto (3).webp">-->
+      <img src="media/img/slideInici/foto (4).webp">
+      <!--<img src="media/img/slideInici/foto (5).webp">-->
+      <!--<img src="media/img/slideInici/foto (6).webp">-->
+      <img src="media/img/slideInici/foto (7).webp">
+      <img src="media/img/slideInici/foto (8).webp">
     </div>
-  </div><script src="script/topNav.js"></script>
-  <div class="spacer"></div>
+    <a class="slidesNav" id="left" onclick="previousImage();"><i class="fas fa-chevron-left"></i></a>
+    <a class="slidesNav" id="right" onclick="nextImage();"><i class="fas fa-chevron-right"></i></a>
+    </section><script src="js/slideFotosInici.js"></script>
 
-  <a class="anchor" id="inici"></a>
-  <section id="sInici">
-    <img src="source/img/slideInici/foto (1).webp" class="active">
-    <img src="source/img/slideInici/foto (2).webp">
-    <!--<img src="source/img/slideInici/foto (3).webp">-->
-    <img src="source/img/slideInici/foto (4).webp">
-    <!--<img src="source/img/slideInici/foto (5).webp">-->
-    <!--<img src="source/img/slideInici/foto (6).webp">-->
-    <img src="source/img/slideInici/foto (7).webp">
-    <img src="source/img/slideInici/foto (8).webp">
-  </section><script src="script/slideFotosInici.js"></script>
+    <section id="activitats">
+      <h1>Activitats</h1>
+    </section>
 
-  <a class="anchor" id="activitats"></a>
-  <section id="sActivitats">
+    <section id="calendari">
+      <h1>Calendari</h1>
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%234285F4&ctz=Europe%2FMadrid&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&hl=ca&src=cG9sZGVtaWd1ZWxAZ21haWwuY29t&src=Y2Euc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%234285F4&color=%237986CB" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <script type="javascript">
+          var x = document.getElementsByClassName("footer");
+          var y = document.getElementsById("footer1");
+          for (i = 0; i < y.length; i++) {
+              y[i].id = "calHidded";
+          }
+      </script>
+    </section>
 
-    <div id="activitats">
-      <div class="hist">Activitats</div>
-      <p>Vies ferrades, barranquisme, escalada...Entra i descobreix totes les activitats que oferim des de Brollats, segur que trobes la teva!<br>
-      Totes les nostres activitats inclouen guia titulat inscrit en el ROPEC, assegurança tant de responsabilitiat civil i d'accidents, tot el material necessari i de seguretat  i un petit reportatge fotogràfic a mans del guia.</p>
-      <div class="containerFlex" id="containerTipus"></div>
-      <hr>
-      <div class="containerFlex" id="containerDestacades"></div>
-    </div>
-    <script src="script/activitats.js"></script>
+    <section id="lloguer">
+      <h1>Lloguer</h1>
+    </section>
 
-    <!--
-    --
-    <div id="ferrades">
-      <div><i class="fas fa-arrow-circle-left"></i> | Activitats > Ferrades</div>
-      <p>Les vies ferrades consisteixen en itineraris equipats per les parets amb diversos materials: claus, grapes, preses, passamans, ponts, escales penjant... vols saber-ne més? En una ferrada trobaràs esport i diversió en una mateixa activitat. Vine i gaudeix amb nosaltres de les millors ferrades de Catalunya!<br>
-      El preu de les nostres activitats inclouen guia titulat inscrit en el ROPEC, assegurança tant de responsabilitiat civil com d'accidents, tot el material necessari i de seguretat per la realització de l'activitat i un petit reportatge fotogràfic a mans del guia.</p>
-      <ul>
-        <li>Botons <ul>
-            <li>Iniciació: Ideal per un primer contacte, famílies i per grups d'amics sense experiència.</li>
-            <li>Mig/Avançat: Per a persones i grups que ja han tingut un primer contacte amb les vies ferrades</li>
-            <li>Expert: Per a persones atrevides i valentes que tinguin experiencia i bon nivell de condició física</li>
-            <li>Cursos: Cursos de les maniobres necessàries per ser autònom en una via ferrada. (Ràpels, Assegurar...)
-          </ul>
-        </li>
-      </ul>
-    </div>
-    --
-    <div id="ferradesN1" display="none">
-      <div><i class="fas fa-arrow-circle-left"></i> | Activitats > Ferrades > Iniciació</div>
-      Vies Ferrades Iniciació
-      <p>Aquí us deixem la nostre proposta de vies ferrades de nivell mig i avançat:<br>
-        En cas de dubtes o de voler realitzar una activitat no oferida us podeu dirigir a l'apartat de CONTACTE i fer-nos la vostra proposta.<br>
-        El preu de totes les nostres activitats inclouen: guia titula, equip complet de via ferrada i assegurança d'accidents i RC.</p>
-        <br>Activitats
-    </div>
-    --
-    <div id="ferradesN2" display="none">
-      <div><i class="fas fa-arrow-circle-left"></i> | Activitats > Ferrades > Mig</div>
-      Vies Ferrades Mig/Avançat
-        <p>Aquí us deixem la nostre proposta de vies ferrades d'iniciació:<br>
-        En cas de dubtes o de voler realitzar una activitat no oferida us podeu dirigir a l'apartat de CONTACTE i fer-nos la vostra proposta.<br>
-        El preu de totes les nostres activitats inclouen: guia titula, equip complet de via ferrada i assegurança d'accidents i RC.</p>
-        <br>Activitats
-      </ul>
-    </div>
-    --
-    <div id="ferradesN3" display="none">
-      <div><i class="fas fa-arrow-circle-left"></i> | Activitats > Ferrades > Expert</div>
-      Vies Ferrades Mig/Avançat
-        <p>Aquí us deixem la nostre proposta de vies ferrades de nivell expert, les més difícils:<br>
-        *Per la realització d'aquestes activitats cal experiència prèvia i es farà en grups molt reduíts.<br>
-        En cas de dubtes o de voler realitzar una activitat no oferida us podeu dirigir a l'apartat de CONTACTE i fer-nos la vostra proposta.<br>
-        El preu de totes les nostres activitats inclouen: guia titula, equip complet de via ferrada i assegurança d'accidents i RC.</p>
-        <br>Activitats
-      </ul>
-    </div>
-  -->
+    <section id="contacte">
+      <h1>Contacte</h1>
+    </section>
 
-  </section>
-
-  <a class="anchor" id="calendari"></a>
-  <section id="sCalendari">
-    <div>Calendari</div>
-  </section>
-
-  <a class="anchor" id="bono"></a>
-  <section id="sBono">
-    <div>Bono Regal</div>
-  </section>
-
-  <a class="anchor" id="lloguer"></a>
-  <section id="sLloguer">
-    <div>Lloguer de material</div>
-  </section>
-
-  <a class="anchor" id="contacte"></a>
-  <section id="sContacte">
-    <div>Contacte</div>
-  </section>
-</body>
-
-<footer>  
-
-</footer>
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+  </body>
+  
+  <footer>
+    <img src="media\img\logo_inici.png" class="logo" height="45px">
+    <br><br>
+    <a href="https://www.instagram.com/brollats/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://www.facebook.com/brollats-101131178785251" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+    <a href="https://twitter.com/brollats" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=34644433597&text=En%20que%20et%20podem%20ajudar?" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+    <br>
+    <a href="mailto:info@brollats.cat">info@brollats.cat</a>
+    <br><br>
+    <a href="tel:+34644433597">644 433 597</a>
+    <p style="font-size: 10px">Si no contestem, deixeu-nos un Whatsapp</p>
+  </footer>
 </html>

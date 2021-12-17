@@ -1,4 +1,4 @@
-var section = document.getElementById("sInici");
+var section = document.getElementById("imatgesInici");
   var images = section.children;
   var container = document.createElement("div");
   container.id = "slideIniciButtons";
@@ -15,7 +15,7 @@ var section = document.getElementById("sInici");
   section.appendChild(container);
 
   function updateBolas(){
-    var section = document.getElementById("sInici");
+    var section = document.getElementById("imatgesInici");
     var images = section.children;
     var bolasContainer = document.getElementById("slideIniciButtons");
     var bolas = bolasContainer.children;
@@ -29,7 +29,7 @@ var section = document.getElementById("sInici");
     }
   }
   var nextImage = function(){
-    var section = document.getElementById("sInici");
+    var section = document.getElementById("imatgesInici");
     var images = section.children;
     var i;
     for (i = 0; i < images.length-1; i++) {
@@ -44,9 +44,30 @@ var section = document.getElementById("sInici");
         break;
       }
     }
+    clearInterval(iniciInterval);
+    iniciInterval = setInterval(function(){nextImage();}, 5000);
+  }
+  var previousImage = function(){
+    var section = document.getElementById("imatgesInici");
+    var images = section.children;
+    var i;
+    for (i = 0; i < images.length-1; i++) {
+      if(images[i].classList.contains("active")){
+        images[i].classList.remove("active");
+        if (i-1>=0){
+          images[i-1].classList.add("active");
+        }else {
+          images[images.length-2].classList.add("active");
+        }
+        updateBolas();
+        break;
+      }
+    }
+    clearInterval(iniciInterval);
+    iniciInterval = setInterval(function(){nextImage();}, 5000);
   }
   function selectImage(desired){
-    var section = document.getElementById("sInici");
+    var section = document.getElementById("imatgesInici");
     var images = section.children;
     var i;
     for (i = 0; i < images.length-1; i++) {
