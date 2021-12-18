@@ -7,8 +7,8 @@ console.log(buttonContainer);
 function updateLangButton(){
   var language = localStorage.getItem('language');
   if(language=='es'){
-    buttonContainer.children[2].classList.add("active");
     buttonContainer.children[1].classList.remove("active");
+    buttonContainer.children[2].classList.add("active");
   }else {
     buttonContainer.children[1].classList.add("active");
     buttonContainer.children[2].classList.remove("active");

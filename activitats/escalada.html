@@ -43,17 +43,16 @@
       </nav>
     </header>
         
-    <section>
-      <div class="submenu">
-          <div class="submenu-item"><a href="viaferrada.html">Via Ferrada</a></div>
-          <div class="submenu-item"><a href="barranquisme.html">Barranquisme</a></div>
-          <div class="submenu-item active"><a href="escalada.html">Escalada</a></div>
-          <div class="submenu-item"><a href="raquetes.html">Raquetes</a></div>
-          <div class="submenu-item"><a href="orientacio.html">Orientació</a></div>
-      </div>
-      <h1>Escalada</h1>
-
-
+    <section id="contingut">
+      <script src="../js/activitats.js"></script>
+      <script>
+        var tipus = "escalada";
+        submenuActivitats(tipus);
+        omplirActivitat(tipus);
+      </script>   
+      <div id="container_activitats"></div>
+      <script>//omplirTipusActivitats();</script>
+    </section>
 
     </section>
 

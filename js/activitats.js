@@ -31,8 +31,8 @@ let tipusActivitat = [
 				"es": "El <strong>precio</strong> de nuestras actividades incluyen <strong>guía</strong> titulado inscrito en el ROPEC, <strong>seguro</strong> tanto de responsabilidad civil como de accidentes, todo el <strong>material necesario</strong> y de seguridad para la realización de la actividad y un pequeño <strong>reportaje fotográfico</strong> a manos del guía."
 			}
 		],
-		link:"activitats/viaferrada.html", 
-		img:"media/img/slideInici/foto (4).webp",
+		link:"/activitats/viaferrada.html", 
+		img:"/media/img/slideInici/foto (4).webp",
 		video:""
 	},
 	{//1
@@ -54,8 +54,8 @@ let tipusActivitat = [
 				"es": "*Para la realización de actividades de barranquismo es imprescindible saber nadar."
 			}
 		],
-		link:"activitats/barranquisme.html", 
-		img:"media/img/slideInici/foto (2).webp",
+		link:"/activitats/barranquisme.html", 
+		img:"/media/img/slideInici/foto (2).webp",
 		video:""
 	},
 	{//2
@@ -63,8 +63,18 @@ let tipusActivitat = [
 			"ca": "Escalada",
 			"es": "Escalada"
 		},
-		link:"activitats/escalada.html",
-		img:"media/img/slideInici/foto (4).webp",
+		descripcio:[
+			{
+				"ca": "És una pràctica esportiva que consisteix a pujar per parets de roca, vessants escarpats i altres relleus verticals utilitzant els mitjans d'assegurament adequats. Si vols millorar la teva tècnica, conèixer noves vies d'escalada o simplement provar aquest esport, no dubtis a contactar amb nosaltres!",
+				"es": "Es una práctica deportiva que consiste en subir por paredes de roca, laderas escarpadas y otros relieves verticales utilizando los medios de aseguramiento adecuados. Si quieres mejorar tu técnica, conocer nuevas vías de escalada o simplemente probar este deporte, ¡no dudes en contactar con nosotros!"
+			},
+			{
+				"ca": "El <strong>preu</strong> de les nostres activitats inclouen <strong>guia</strong> titulat inscrit en el ROPEC, <strong>assegurança</strong> tant de responsabilitiat civil com d'accidents, tot el <strong>material necessari</strong> i de seguretat per la realització de l'activitat i un petit <strong>reportatge fotogràfic</strong> a mans del guia.",
+				"es": "El <strong>precio</strong> de nuestras actividades incluyen <strong>guía</strong> titulado inscrito en el ROPEC, <strong>seguro</strong> tanto de responsabilidad civil como de accidentes, todo el <strong>material necesario</strong> y de seguridad para la realización de la actividad y un pequeño <strong>reportaje fotográfico</strong> a manos del guía."
+			}
+		],
+		link:"/activitats/escalada.html",
+		img:"/media/img/slideInici/foto (4).webp",
 		video:""
 	},
 	{//3	
@@ -72,8 +82,18 @@ let tipusActivitat = [
 			"ca": "Raquetes",
 			"es": "Raquetas"
 		},
-		link:"activitats/raquetes.html",
-		img:"media/img/slideInici/foto (7).webp",
+		descripcio:[
+			{
+				"ca": "Es creu que les raquetes de neu van ser adoptades per caçadors i habitants de l'actual Alaska i Quebec. Consisteix en uns utensilis que s'acoblen a les botes i serveixen per desplaçar-se amb més comoditat per sobre la neu. Això ens permetrà gaudir d'uns espectaculars paisatges del nostre Pirineu. T'hi animes? Ideal per a grups i famílies!",
+				"es": "Se cree que las raquetas de nieve fueron adoptadas por cazadores y habitantes de la actual Alaska y Quebec. Consiste en unos utensilios que se acoplan a las botas y sirven para desplazarse con mayor comodidad por encima de la nieve. Esto nos permitirá gozar de unos espectaculares paisajes de nuestro Pirineo. ¿Te animas? ¡Ideal para grupos y familias!"
+			},
+			{
+				"ca": "El <strong>preu</strong> de les nostres activitats inclouen <strong>guia</strong> titulat inscrit en el ROPEC, <strong>assegurança</strong> tant de responsabilitiat civil com d'accidents, tot el <strong>material necessari</strong> i de seguretat per la realització de l'activitat i un petit <strong>reportatge fotogràfic</strong> a mans del guia.",
+				"es": "El <strong>precio</strong> de nuestras actividades incluyen <strong>guía</strong> titulado inscrito en el ROPEC, <strong>seguro</strong> tanto de responsabilidad civil como de accidentes, todo el <strong>material necesario</strong> y de seguridad para la realización de la actividad y un pequeño <strong>reportaje fotográfico</strong> a manos del guía."
+			}
+		],
+		link:"/activitats/raquetes.html",
+		img:"/media/img/slideInici/foto (7).webp",
 		video:""
 	},
 	{//4
@@ -81,8 +101,18 @@ let tipusActivitat = [
 			"ca": "Orientació",
 			"es": "Orientación"
 		},
-		link:"activitats/orientacio.html",
-		img:"media/img/slideInici/foto (2).webp",
+		descripcio:[
+			{
+				"ca": "Sabíeu que l'orientació és un esport originari de països escandinaus? Consisteix en realitzar un recorregut (a nivell individual o col·lectiu) amb únicament l'ajuda d'un mapa i una brúixola. Desconnectem de la tecnologia per uns instants i centrem-nos en la natura. Aconseguireu trobar tots els \"punts de control\"? Nosaltres ho preparem! Activitat ideal per a grups i famílies!",
+				"es": "¿Sabías que la orientación es un deporte originario de países escandinavos? Consiste en realizar un recorrido (a nivel individual o colectivo) con únicamente la ayuda de un mapa y una brújula. Desconectamos de la tecnología por unos instantes y centrémonos en la naturaleza. ¿Conseguirá encontrar todos los \"puntos de control\"? ¡Nosotros lo preparamos! ¡Actividad ideal para grupos y familias!"
+			},
+			{
+				"ca": "El <strong>preu</strong> de les nostres activitats inclouen <strong>guia</strong> titulat inscrit en el ROPEC, <strong>assegurança</strong> tant de responsabilitiat civil com d'accidents, tot el <strong>material necessari</strong> i de seguretat per la realització de l'activitat i un petit <strong>reportatge fotogràfic</strong> a mans del guia.",
+				"es": "El <strong>precio</strong> de nuestras actividades incluyen <strong>guía</strong> titulado inscrito en el ROPEC, <strong>seguro</strong> tanto de responsabilidad civil como de accidentes, todo el <strong>material necesario</strong> y de seguridad para la realización de la actividad y un pequeño <strong>reportaje fotográfico</strong> a manos del guía."
+			}
+		],
+		link:"/activitats/orientacio.html",
+		img:"/media/img/slideInici/foto (2).webp",
 		video:""
 	}
 ];
@@ -106,37 +136,60 @@ let activitats = [
 		tipus: 0,
 		nom: "CALA DEL MOLÍ",
 		lloc: "SANT FELIU DE GUÍXOLS, BAIX EMPORDÀ",
-		destacata: true,
+		destacada: true,
 		nivell: 1,
-		nivellClassi:0,
+		nivellClassificacio:0,
 		preu: "30€",
+		foto:"",
+		video:"",
+		link:"",
 		descripcio: [
-				"Vine a gaudir d'una experiència única  a la Costa Brava. Passarem pels penya-segats de Sant Feliu de Guíxols amb el mar sota els vostres peus, una aventura inoblidable."
-				]
+			{
+				"ca": "Vine a gaudir d'una experiència única  a la Costa Brava. Passarem pels penya-segats de Sant Feliu de Guíxols amb el mar sota els vostres peus, una aventura inoblidable.",
+				"es": ""
+			}
+		]
 	},
 	{
 		tipus: 0,
 		nom: "ROCA DE LA CREU",
 		lloc: "RIBES DE FRESER, EL RIPOLLÈS, GIRONA",
-		destacata: true,
+		destacada: true,
 		nivell: 1,
-		nivellClassi:0,
+		nivellClassificacio:0,
 		preu: "35€",
+		foto:"",
+		video:"",
+		link:"",
 		descripcio: [
-				"Als peu de del Pirineu trobem aquesta ferrada, ideal per a iniciar-se amb els amics i la família i amb vistes espectaculars del poble i del Taga.",
-				"Us animeu?"
-				]
+			{
+				"ca": "Als peu de del Pirineu trobem aquesta ferrada, ideal per a iniciar-se amb els amics i la família i amb vistes espectaculars del poble i del Taga.",
+				"es": ""
+			},
+			{
+				"ca": "Us animeu?",
+				"es": ""
+			}
+		]
 	},
 	{
 		tipus: 0,
 		nom: "ss",
 		lloc: "ss",
-		destacata: false,
+		destacada: false,
 		nivell: 0,
 		nivellClassi:0,
 		preu: "Consultar",
-		descripcio: ""
-	}
+		foto:"",
+		video:"",
+		link:"",
+		descripcio: [
+			{
+				"ca": "asdf",
+				"es": "fdsa"
+			}
+		]
+	},
 
 ];
 
@@ -145,15 +198,15 @@ function omplirActivitats(){
     
     var title = document.createElement("h1");
     title.innerHTML = 
-        "<span lang='ca'translate=true>" + activitat.nom.ca + "</span>" +
-        "<span lang='es'translate=true style='display:none;'>" + activitat.nom.es + "</span>";
+        "<span lang='ca' translate=true>" + activitat.nom.ca + "</span>" +
+        "<span lang='es' translate=true style='display:none;'>" + activitat.nom.es + "</span>";
     section.appendChild(title);
 
     for (var i = 0; i < activitat.descripcio.length; i++) {
     	var paragraph = document.createElement("p");
     	paragraph.innerHTML = 
-        	"<span lang='ca'translate=true>" + activitat.descripcio[i].ca + "</span>" +
-        	"<span lang='es'translate=true style='display:none;'>" + activitat.descripcio[i].es + "</span>";
+        	"<span lang='ca' translate=true>" + activitat.descripcio[i].ca + "</span>" +
+        	"<span lang='es' translate=true style='display:none;'>" + activitat.descripcio[i].es + "</span>";
     	section.appendChild(paragraph);
     }
 }; //omplirActivitats();
@@ -182,11 +235,71 @@ function omplirTipusActivitats(){
         text.target = "#";
         text.classList.add("title");
         text.innerHTML = "<h2>" + 
-        "<span lang='ca'translate=true>" + tipusActivitat[i].nom.ca + "</span>" +
-        "<span lang='es'translate=true style='display:none;'>" + tipusActivitat[i].nom.es + "</span>" +
+        "<span lang='ca' translate=true>" + tipusActivitat[i].nom.ca + "</span>" +
+        "<span lang='es' translate=true style='display:none;'>" + tipusActivitat[i].nom.es + "</span>" +
         "</h2>";
         element.appendChild(text);
        
         container.appendChild(element);
     }
 }; //omplirActivitats();
+
+/*
+	<div class="submenu">
+        <div class="submenu-item active"><a href="viaferrada.html">Via Ferrada</a></div>
+        <div class="submenu-item"><a href="barranquisme.html">Barranquisme</a></div>
+        <div class="submenu-item"><a href="escalada.html">Escalada</a></div>
+        <div class="submenu-item"><a href="raquetes.html">Raquetes</a></div>
+        <div class="submenu-item"><a href="orientacio.html">Orientació</a></div>
+     </div>
+ */
+
+function getIndexTipus(a){
+	if (a==="ferrada") return 0;
+	else if (a==="barranquisme") return 1;
+	else if (a==="escalada") return 2;
+	else if (a==="raquetes") return 3;
+	else if (a==="orientacio") return 4;
+	else return -1;
+}
+
+function submenuActivitats(a){
+	var section = document.getElementById("contingut");
+	var tipus = getIndexTipus(a);
+
+	var submenu = document.createElement("div");
+	submenu.classList.add("submenu");
+
+	for (var i = 0; i < tipusActivitat.length; i++) {
+		var submenuItem = document.createElement("div");
+		submenuItem.classList.add("submenu-item");
+		if(i==tipus) submenuItem.classList.add("active");
+			var link = document.createElement("a");
+			link.href=tipusActivitat[i].link;
+			link.innerHTML=
+				"<span lang='ca' translate=true>" + tipusActivitat[i].nom.ca + "</span>" +
+        		"<span lang='es' translate=true style='display:none;'>" + tipusActivitat[i].nom.es + "</span>";
+        	submenuItem.appendChild(link);
+        submenu.appendChild(submenuItem);
+	}
+	section.appendChild(submenu);
+}
+
+function omplirActivitat(a){
+	var section = document.getElementById("contingut");
+	var tipus = getIndexTipus(a);
+
+	var title = document.createElement("h1");
+    title.innerHTML = 
+        "<span lang='ca' translate=true>" + tipusActivitat[tipus].nom.ca + "</span>" +
+        "<span lang='es' translate=true style='display:none;'>" + tipusActivitat[tipus].nom.es + "</span>";
+    section.appendChild(title);
+
+    for (var i = 0; i < tipusActivitat[tipus].descripcio.length; i++) {
+    	var paragraph = document.createElement("p");
+    	paragraph.innerHTML = 
+        	"<span lang='ca' translate=true>" + tipusActivitat[tipus].descripcio[i].ca + "</span>" +
+        	"<span lang='es' translate=true style='display:none;'>" + tipusActivitat[tipus].descripcio[i].es + "</span>";
+    	section.appendChild(paragraph);
+    }
+};
