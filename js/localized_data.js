@@ -1,24 +1,5 @@
-/*{
-  "titol_activitat"= {
-    "ca"=[
-      "Activitats"
-    ],
-    "es"=[
-      "Actividades"
-    ]
-  },
-  "descripcio_activitat"={
-    "ca"=[
-      "Vies ferrades, barranquisme, escalada...Entra i descobreix totes les activitats que oferim des de Brollats, segur que trobes la teva!",
-      "Totes les nostres activitats inclouen guia titulat inscrit en el ROPEC, assegurança tant de responsabilitiat civil i d'accidents, tot el material necessari i de seguretat  i un petit reportatge fotogràfic a mans del guia."
-    ],
-    "es"=[
-      "Vías ferratas, barranquismo, escalada...Entra y descubre todas las actividades que ofrecemos desde Brollats, ¡seguro que encuentras la tuya!",
-      "Todas nuestras actividades incluyen guía titulado inscrito en el ROPEC, seguro tanto de responsabilidad civil y de accidentes, todo el material necesario y de seguridad y un pequeño reportaje fotográfico en manos del guía."
-    ]
-  }
-}*/
-
+//<span lang='ca'translate=true>
+//<span lang='es' translate=true style="display:none;">
 
 var buttonContainer = document.querySelector("#idiomaSwapp");
 console.log(buttonContainer);
