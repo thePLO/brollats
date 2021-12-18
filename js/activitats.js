@@ -31,8 +31,8 @@ let tipusActivitat = [
 				"es": "El <strong>precio</strong> de nuestras actividades incluyen <strong>guía</strong> titulado inscrito en el ROPEC, <strong>seguro</strong> tanto de responsabilidad civil como de accidentes, todo el <strong>material necesario</strong> y de seguridad para la realización de la actividad y un pequeño <strong>reportaje fotográfico</strong> a manos del guía."
 			}
 		],
-		link:"/activitats/viaferrada.html", 
-		img:"/media/img/slideInici/foto (4).webp",
+		link:"/brollats/activitats/viaferrada.html", 
+		img:"/brollats/media/img/slideInici/foto (4).webp",
 		video:""
 	},
 	{//1
@@ -54,8 +54,8 @@ let tipusActivitat = [
 				"es": "*Para la realización de actividades de barranquismo es imprescindible saber nadar."
 			}
 		],
-		link:"/activitats/barranquisme.html", 
-		img:"/media/img/slideInici/foto (2).webp",
+		link:"/brollats/activitats/barranquisme.html", 
+		img:"/brollats/media/img/slideInici/foto (2).webp",
 		video:""
 	},
 	{//2
@@ -73,8 +73,8 @@ let tipusActivitat = [
 				"es": "El <strong>precio</strong> de nuestras actividades incluyen <strong>guía</strong> titulado inscrito en el ROPEC, <strong>seguro</strong> tanto de responsabilidad civil como de accidentes, todo el <strong>material necesario</strong> y de seguridad para la realización de la actividad y un pequeño <strong>reportaje fotográfico</strong> a manos del guía."
 			}
 		],
-		link:"/activitats/escalada.html",
-		img:"/media/img/slideInici/foto (4).webp",
+		link:"/brollats/activitats/escalada.html",
+		img:"/brollats/media/img/slideInici/foto (4).webp",
 		video:""
 	},
 	{//3	
@@ -92,8 +92,8 @@ let tipusActivitat = [
 				"es": "El <strong>precio</strong> de nuestras actividades incluyen <strong>guía</strong> titulado inscrito en el ROPEC, <strong>seguro</strong> tanto de responsabilidad civil como de accidentes, todo el <strong>material necesario</strong> y de seguridad para la realización de la actividad y un pequeño <strong>reportaje fotográfico</strong> a manos del guía."
 			}
 		],
-		link:"/activitats/raquetes.html",
-		img:"/media/img/slideInici/foto (7).webp",
+		link:"/brollats/activitats/raquetes.html",
+		img:"/brollats/media/img/slideInici/foto (7).webp",
 		video:""
 	},
 	{//4
@@ -111,8 +111,8 @@ let tipusActivitat = [
 				"es": "El <strong>precio</strong> de nuestras actividades incluyen <strong>guía</strong> titulado inscrito en el ROPEC, <strong>seguro</strong> tanto de responsabilidad civil como de accidentes, todo el <strong>material necesario</strong> y de seguridad para la realización de la actividad y un pequeño <strong>reportaje fotográfico</strong> a manos del guía."
 			}
 		],
-		link:"/activitats/orientacio.html",
-		img:"/media/img/slideInici/foto (2).webp",
+		link:"/brollats/activitats/orientacio.html",
+		img:"/brollats/media/img/slideInici/foto (2).webp",
 		video:""
 	}
 ];
