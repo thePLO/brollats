@@ -244,16 +244,6 @@ function omplirTipusActivitats(){
     }
 }; //omplirActivitats();
 
-/*
-	<div class="submenu">
-        <div class="submenu-item active"><a href="viaferrada.html">Via Ferrada</a></div>
-        <div class="submenu-item"><a href="barranquisme.html">Barranquisme</a></div>
-        <div class="submenu-item"><a href="escalada.html">Escalada</a></div>
-        <div class="submenu-item"><a href="raquetes.html">Raquetes</a></div>
-        <div class="submenu-item"><a href="orientacio.html">Orientació</a></div>
-     </div>
- */
-
 function getIndexTipus(a){
 	if (a==="ferrada") return 0;
 	else if (a==="barranquisme") return 1;

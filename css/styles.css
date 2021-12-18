@@ -349,13 +349,11 @@ a.logo, a.logo_{
   border-radius: 100%;
   text-decoration: none;
   color: white;
+  border: solid white 2px;
 }
 .whatsupBuble:hover{
   background: #54ff94;
 }
-  
-
-
 
 /* ------------------------------------------
   MASK
