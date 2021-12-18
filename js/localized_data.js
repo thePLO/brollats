@@ -1,5 +1,6 @@
 //<span lang='ca'translate=true>
 //<span lang='es' translate=true style="display:none;">
+//<span lang='en' translate=true style="display:none;">
 
 var buttonContainer = document.querySelector("#idiomaSwapp");
 console.log(buttonContainer);
