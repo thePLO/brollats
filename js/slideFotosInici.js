@@ -1,5 +1,19 @@
-var section = document.getElementById("imatgesInici");
+var fotos = [
+  "/brollats/media/img/slideInici/foto (1).webp",
+  "/brollats/media/img/slideInici/foto (2).webp",
+  "/brollats/media/img/slideInici/foto (3).webp",
+  "/brollats/media/img/slideInici/foto (7).webp",
+  "/brollats/media/img/slideInici/foto (8).webp"
+]
+
+  var section = document.getElementById("imatgesInici");
+  for (i = 0; i < fotos.length; i++) {
+    var foto = document.createElement("img");
+    foto.src = fotos[i];
+    section.appendChild(foto);
+  }
   var images = section.children;
+  images[0].classList.add("active");
   var container = document.createElement("div");
   container.id = "slideIniciButtons";
   var i;
