@@ -64,8 +64,9 @@ body {
 #idiomaSwapp button{
   border: none;
   background: transparent;
-  color:lightgray;
-  font-size: .8em;
+  color:#69c2ff;
+  font-size: .7em;
+  cursor: pointer;
 }
 #idiomaSwapp button.active{
   color: white;
@@ -346,6 +347,26 @@ a.logo, a.logo_{
   }
 }
 
+.whatsupBuble{
+  background: #25D366;
+  position: fixed;
+  z-index: 3;
+  width:2em;
+  height:2em;
+  font-size: 2em;
+  line-height: 2em;
+  text-align: center;
+  right: 20px;
+  bottom: 50px;
+  padding: 5px;
+  border-radius: 100%;
+  text-decoration: none;
+  color: white;
+}
+.whatsupBuble:hover{
+  background: #54ff94;
+}
+  
 
 
 

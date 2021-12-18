@@ -6,12 +6,20 @@ console.log(buttonContainer);
       
 function updateLangButton(){
   var language = localStorage.getItem('language');
+  if(language=='en'){
+    buttonContainer.children[1].classList.remove("active");
+    buttonContainer.children[2].classList.remove("active");
+    buttonContainer.children[2].classList.add("active");    
+  }
   if(language=='es'){
     buttonContainer.children[1].classList.remove("active");
     buttonContainer.children[2].classList.add("active");
-  }else {
+    buttonContainer.children[3].classList.remove("active");
+  }
+  else {
     buttonContainer.children[1].classList.add("active");
     buttonContainer.children[2].classList.remove("active");
+    buttonContainer.children[3].classList.remove("active");
   }
 }
 
@@ -25,10 +33,12 @@ function updateTexts(){
 }
 
 function changeLanguage(_lan){
-  localStorage.setItem('language', _lan||'ca');
-  document.documentElement.setAttribute('lang', _lan||'ca');
-  updateLangButton();
-  updateTexts();
+  if(_lan != "en"){
+    localStorage.setItem('language', _lan||'ca');
+    document.documentElement.setAttribute('lang', _lan||'ca');
+    updateLangButton();
+    updateTexts();
+  }
 }
 
 var language = localStorage.getItem('language');
