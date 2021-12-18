@@ -60,21 +60,12 @@
     </section><script src="js/slideFotosInici.js"></script>
 
     <section id="activitats">
-
-      <h1><span lang='ca'translate=true>Activitats</span></h1>
-      <h1><span lang='es' translate=true style="display:none;">Actividades</span></h1>
-
-        <p><span lang='ca'translate=true>Vies ferrades, barranquisme, escalada...Entra i descobreix totes les activitats que oferim des de Brollats, segur que trobes la teva!</span></p>
-        <p><span lang='ca'translate=true>Totes les nostres activitats inclouen guia titulat inscrit en el ROPEC, assegurança tant de responsabilitiat civil i d'accidents, tot el material necessari i de seguretat  i un petit reportatge fotogràfic a mans del guia.</span></p>
-      
-        <p><span lang='es' translate=true style="display:none;">Vías ferratas, barranquismo, escalada...Entra y descubre todas las actividades que ofrecemos desde Brollats, ¡seguro que encuentras la tuya!</span></p>
-        <p><span lang='es' translate=true style="display:none;">Todas nuestras actividades incluyen guía titulado inscrito en el ROPEC, seguro tanto de responsabilidad civil y de accidentes, todo el material necesario y de seguridad y un pequeño reportaje fotográfico en manos del guía.</span></p>
-      
-      <div id="container_activitats"></div>
       <script src="js/activitats.js"></script>
-
-      <script>
-        /*var videos= document.getElementsByClassName("activitatItem");
+      <script>omplirActivitats();</script>   
+      <div id="container_activitats"></div>
+      <script>omplirTipusActivitats();</script>
+      <!--<script>
+        var videos= document.getElementsByClassName("activitatItem");
         for (var i=0;i<videos.length;i++){
           videos[i].addEventListener("mouseover", function() {
             this.children[0].play();
@@ -82,8 +73,8 @@
           videos[i].addEventListener("mouseleave", function() {
             this.children[0].pause();
           });
-        }*/
-      </script>
+        }
+      </script>-->
 
     </section>
 
@@ -100,7 +91,82 @@
     </section>
 
     <section id="lloguer">
-      <h1>Lloguer</h1>
+      <h1>
+        <span lang='ca'translate=true>Lloguer de material</span>
+        <span lang='es' translate=true style="display:none;">Alquiler de material</span>
+      </h1>
+      <p>
+        <span lang='ca'translate=true>Si el que necessites és material per fer alguna activitat de barranquisme o vies ferrades per anar pel vostre compte, nosaltres també t'ho oferim. Aquí trobaràs els preus del material que necessites per fer l'activitat que vulguis.</span>
+        <span lang='es' translate=true style="display:none;">Si lo que necesitas es material para hacer alguna actividad de barranquismo o vías ferratas para ir por su cuenta, nosotros también te lo ofrecemos. Aquí encontrarás los precios del material que necesitas para realizar la actividad que quieras.</span>
+      </p>
+      <div id="container_material">
+        <div id="ferrada_material">
+          <h2><span lang='ca'translate=true>Material de ferrades</span></h2>
+          <h2><span lang='es' translate=true style="display:none;">Material de ferratas</span></h2>
+          <ul>
+            <li>
+              <span lang='ca'translate=true>arnés</span>
+              <span lang='es' translate=true style="display:none;">arnés</span>
+            </li>
+            <li>
+              <span lang='ca'translate=true>casc</span>
+              <span lang='es' translate=true style="display:none;">casco</span>
+            </li>
+            <li>
+              <span lang='ca'translate=true>dissipador</span>
+              <span lang='es' translate=true style="display:none;">disipador</span>
+            </li>
+            <li>
+              <span lang='ca'translate=true>vaga d'ancoratge</span>
+              <span lang='es' translate=true style="display:none;">cabo de anclaje</span>
+            </li>
+            <p><br>
+              <span lang='ca'translate=true><strong>Preu:</strong> 18 €</span>
+              <span lang='es' translate=true style="display:none;"><strong>Precio:</strong> 18 €</span>
+            </p>
+          </ul>
+        </div>
+        <div id="barranc_material">
+          <h2>
+            <span lang='ca'translate=true>Material de barranquisme</span>
+            <span lang='es' translate=true style="display:none;">Material de barranquismo</span>
+          </h2>
+          <ul>
+            <li>
+              <span lang='ca'translate=true>neoprè</span>
+              <span lang='es' translate=true style="display:none;">neopreno</span>
+            </li>
+            <span lang='ca'translate=true class="detall">(mono peça o dues peces)</span>
+            <span lang='es' translate=true style="display:none;" class="detall">(mono pieza o dos piezas)</span>
+            <li>
+              <span lang='ca'translate=true>casc</span>
+              <span lang='es' translate=true style="display:none;">casco</span>
+            </li>
+            <li>
+              <span lang='ca'translate=true>arnés amb culera</span>
+              <span lang='es' translate=true style="display:none;">arnés con culera</span>
+            </li>
+            <li>
+              <span lang='ca'translate=true>vaga d'ancoratge 2 punts</span>
+              <span lang='es' translate=true style="display:none;">cabo de anclaje 2 puntos</span>
+            </li>
+            <li>
+              <span lang='ca'translate=true>vuit amb mosquetó de seguretat</span>
+              <span lang='es' translate=true style="display:none;">ocho con mosquetón de seguridad</span>
+            </li>
+            <li>
+              <span lang='ca'translate=true>escarpins</span>
+              <span lang='es' translate=true style="display:none;">escarpines</span>
+            </li>
+            <span lang='ca'translate=true class="detall">(mitjons de neoprè)</span>
+            <span lang='es' translate=true style="display:none;" class="detall">(calcetines de neopreno)</span>
+            <p><br>
+              <span lang='ca'translate=true><strong>Preu:</strong> 28 €</span>
+              <span lang='es' translate=true style="display:none;"><strong>Precio:</strong> 28 €</span>
+            </p>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="contacte">
