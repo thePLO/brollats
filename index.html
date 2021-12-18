@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
-<<<<<<< HEAD
-<<<<<<< HEAD
 <!--<meta name="google" content="notranslate">-->
-=======
-<meta name="google" content="notranslate">
->>>>>>> parent of f0d1737 (aa)
-=======
->>>>>>> parent of cae7562 (Update index.html)
   <head>
     <meta charset="utf-8">
     <title>Brollats - Guies de muntanya</title>
@@ -24,15 +17,21 @@
   </head>
   <body>
 
+    <div id="idiomaSwapp">
+      <i class="fas fa-globe-europe"></i> 
+      <button onclick="changeLanguage('ca')">CAT</button> | 
+      <button onclick="changeLanguage('es')">CAS</button>
+    </div><script src="js/localized_data.js"></script>
+
     <header>
       <a href="#inici" class="logo" data-scroll><img src="media\img\logo_inici.png" class="logo" height="45px"></a>
       <nav class="nav-collapse">
         <ul>
-          <li class="menu-item active"><a href="#inici" data-scroll>Inici</a></li>
-          <li class="menu-item"><a href="#activitats" data-scroll>Activitats</a></li>
-          <li class="menu-item"><a href="#calendari" data-scroll>Calendari</a></li>
-          <li class="menu-item"><a href="#lloguer" data-scroll>Lloguer de material</a></li>
-          <li class="menu-item"><a href="#contacte" data-scroll>Contacte</a></li>
+          <li class="menu-item"><a href="#inici" data-scroll id="menu1">Inici</a></li>
+          <li class="menu-item"><a href="#activitats" data-scroll id="menu2">Activitats</a></li>
+          <li class="menu-item"><a href="#calendari" data-scroll id="menu3">Calendari</a></li>
+          <li class="menu-item"><a href="#lloguer" data-scroll id="menu4">Lloguer de material</a></li>
+          <li class="menu-item"><a href="#contacte" data-scroll id="menu5">Contacte</a></li>
           <li class="menu-item">
             <div class="social"> 
                 <a class="social" href="https://www.instagram.com/brollats/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -44,78 +43,6 @@
         </ul>
       </nav>
     </header>
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <button id="idiomaSwapp">castellano</button>
-    <script type="text/javascript">
-      var language = localStorage.getItem('miGato');
-      if (language == null) localStorage.setItem('language', 'ca');
-      document.documentElement.setAttribute('lang', language)
-      var _button = document.querySelector("#idiomaSwapp");
-      function updatebutton(){
-        if(language=='ca'){
-          _button.content = "Español";
-        }else{
-          _button.content = "Català";
-        }
-      }updatebutton();
-      _button.onclick = function(){
-        if(language=='ca'){
-          language = 'es';
-          localStorage.setItem('language', 'es');
-        }else if(language=='es'){
-          language = 'ca';
-          localStorage.setItem('language', 'ca');
-        }
-        updatebutton()
-      };
-    </script>
-
-    <!-- <div id="google_translate_element" class="google"><a href='index.html#es'>-Castellano-</a></div>-->
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js"></script>
-    <!--<script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-=======
-    <div id="google_translate_element" class="google"><a onclick='
-          function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
->>>>>>> parent of f0d1737 (aa)
-=======
-    <div id="google_translate_element" class="google"></div>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
->>>>>>> parent of cae7562 (Update index.html)
-            pageLanguage: "ca",
-            includedLanguages: "es,en",
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-<<<<<<< HEAD
-            autoDisplay: false,
-<<<<<<< HEAD
-<<<<<<< HEAD
-          }, "google_translate_element");
-          var a = document.querySelector("#google_translate_element select");
-          a.selectedIndex=1;
-          a.dispatchEvent(new Event('change'));
-      }
-    </script> -->
-=======
-          }, "google_translate_element");}'>-Castellano-</a></div>
-    
->>>>>>> parent of f0d1737 (aa)
-=======
-=======
-            autoDisplay: false
->>>>>>> parent of f850534 (activitats)
-          }, "google_translate_element")
-      }
-    </script>    
->>>>>>> parent of cae7562 (Update index.html)
 
     <section id="inici">
     <div id="imatgesInici">
@@ -134,7 +61,24 @@
 
     <section id="activitats">
       <h1>Activitats</h1>
-     
+      <!--<div class="image-block" style="background:url('media/img/slideInici/foto (4).webp') no-repeat center center fixed;/*-webkit-mask-image:url('media/img/logos/alogo_3.png')*/;width: 100%;height: 800px;"></div>-->
+      <p>Vies ferrades, barranquisme, escalada...Entra i descobreix totes les activitats que oferim des de Brollats, segur que trobes la teva!</p>
+      <p>Totes les nostres activitats inclouen guia titulat inscrit en el ROPEC, assegurança tant de responsabilitiat civil i d'accidents, tot el material necessari i de seguretat  i un petit reportatge fotogràfic a mans del guia.</p>
+      <div id="container_activitats"></div>
+
+      <script src="js/activitats.js"></script>
+      <script>
+        /*var videos= document.getElementsByClassName("activitatItem");
+        for (var i=0;i<videos.length;i++){
+          videos[i].addEventListener("mouseover", function() {
+            this.children[0].play();
+          });
+          videos[i].addEventListener("mouseleave", function() {
+            this.children[0].pause();
+          });
+        }*/
+      </script>
+
     </section>
 
     <section id="calendari">
@@ -155,20 +99,14 @@
 
     <section id="contacte">
       <h1>Contacte</h1>
-<<<<<<< HEAD
     </section> 
-=======
-    </section>
-
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
->>>>>>> parent of cae7562 (Update index.html)
   </body>
-  
-  <footer>
-    <img src="media\img\logo_inici.png" class="logo" height="45px">
+
+  <script src="js/fastclick.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/fixed-responsive-nav.js"></script>
+  <footer id="footer">
+    <img src="media\img\logo_inici.png" class="logo">
     <br><br>
     <a href="https://www.instagram.com/brollats/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
     <a href="https://www.facebook.com/brollats-101131178785251" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
