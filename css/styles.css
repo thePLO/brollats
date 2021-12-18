@@ -56,11 +56,18 @@ body {
   z-index: 4;
   color:white;
 }
+#idiomaSwapp i{
+  vertical-align: text-bottom;
+  font-size: .8em;
+}
+
 #idiomaSwapp button{
   border: none;
   background: transparent;
   color:lightgray;
-}#idiomaSwapp button.active{
+  font-size: .8em;
+}
+#idiomaSwapp button.active{
   color: white;
   font-weight: bold;
 }

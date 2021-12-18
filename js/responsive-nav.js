@@ -668,4 +668,5 @@ window.onload = function(){
   //else document.getElementById('menu1').click();
 
   document.getElementsByClassName('mask')[0].click();
+  updateTexts();
 };
