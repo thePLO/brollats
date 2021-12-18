@@ -251,6 +251,13 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   color: white;
 }
 
+section.bono{
+  margin-top: 79px;
+  text-align: left;
+}
+.bono h1{
+  text-align: center;
+}
 
 /* ------------------------------------------
   MATERIAL
