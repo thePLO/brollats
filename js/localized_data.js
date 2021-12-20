@@ -3,7 +3,6 @@
 //<span lang='en' translate=true style="display:none;">
 
 var buttonContainer = document.querySelector("#idiomaSwapp");
-console.log(buttonContainer);
       
 function updateLangButton(){
   var language = localStorage.getItem('language');
