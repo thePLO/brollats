@@ -671,6 +671,10 @@ function omplirActivitat(a){
     	paragraph.innerHTML = omplirIdiomes(tipusActivitat[tipus].descripcio[i]);
     	section.appendChild(paragraph);
     }
+};
+function omplirActivitats(a) {
+	var section = document.getElementById("contingut");
+	var tipus = getIndexTipus(a);
 
     var containerFiltre = document.createElement("div");
     containerFiltre.classList.add("containerFiltre");
@@ -690,7 +694,6 @@ function omplirActivitat(a){
     	button.innerHTML = omplirIdiomes(nivellClassificació[i].nom);
     	containerFiltre.appendChild(button);
     }
-
     section.appendChild(containerFiltre);
 
     var container = document.createElement("div");
@@ -737,7 +740,7 @@ function omplirActivitat(a){
     }
 
     section.appendChild(container);
-};
+}
 
 //-----------------------
 
