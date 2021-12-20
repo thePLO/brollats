@@ -591,7 +591,7 @@ let activitatsData = [
 		"destacada": false,
 		"nivell": 3,
 		"nivellClassificacio":2,
-		"preu": "60€",
+		"preu": "Consultar",
 		"foto":"../media/img/activitats/saltsallent.webp",
 		"video":"",
 		"link":"",
