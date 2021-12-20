@@ -5,11 +5,18 @@ let nivellsFiltre = [
 			"es": "Iniciación",
 			"en": "Beginner",
 		},
-		"descripcio": {
-			"ca": "Ideal per un primer contacte, faamílies i grups d'amics sense exxperiència",
-			"es": "",
-			"en": "",
-		},
+		"descripcio": [
+			{//ferrades
+				"ca": "Ideal per un primer contacte, faamílies i grups d'amics sense exxperiència",
+				"es": "",
+				"en": "",
+			},
+			{//barrancs
+				"ca": "Ideal per un primer contacte, faamílies i grups d'amics sense exxperiència",
+				"es": "",
+				"en": "",
+			}
+		],
 		"color":"#00ff00",
 		"img":"source/img/slideInici/foto (4).webp"
 	},//0
@@ -19,11 +26,18 @@ let nivellsFiltre = [
 			"es": "Medio",
 			"en": "Average",
 		},
-		"descripcio": {
-			"ca": "Per a persones i grups que ja hagin tingut un primer contacte amb les vies ferrades",
-			"es": "",
-			"en": "",
-		},
+		"descripcio": [
+			{//ferrades
+				"ca": "Per a persones i grups que ja hagin tingut un primer contacte amb les vies ferrades",
+				"es": "",
+				"en": "",
+			},
+			{//barrancs//No nivell mig
+				"ca": "",
+				"es": "",
+				"en": "",
+			}
+		],
 		"color":"#ffff00",
 		"img":"source/img/slideInici/foto (4).webp"
 	},				//1
@@ -33,11 +47,18 @@ let nivellsFiltre = [
 			"es": "Avanzado",
 			"en": "Advanced",
 		},
-		"descripcio": {
-			"ca": "Per a persones atrevides i valentes que tinguin experiència i una bona condició física",
-			"es": "",
-			"en": "",
-		},
+		"descripcio": [
+			{//ferrades
+				"ca": "Per a persones atrevides i valentes que tinguin experiència i una bona condició física",
+				"es": "",
+				"en": "",
+			},
+			{//barrancs
+				"ca": "Per a persones i grups que ja hagin tingut un primer contacte amb les vies ferrades",
+				"es": "",
+				"en": "",
+			}			
+		],
 		"color":"#ff0000",
 		"img":"source/img/slideInici/foto (4).webp"
 	}			//2

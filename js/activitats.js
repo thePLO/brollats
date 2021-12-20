@@ -129,13 +129,21 @@ function omplirActivitats(a) {
     button_all.onclick = function(){activitatsfiltre(-1)};
     button_all.innerHTML = omplirIdiomes(allString);
     containerFiltre.appendChild(button_all)
+    var classiUtilitzada = [false, false, false];
+    for (var i = 0; i < activitats.length; i++) {
+        if (activitats[i].tipus == tipus){
+            classiUtilitzada[activitats[i].nivellClassificacio] = true;
+        }
+    }
     for (var i = 0; i < nivellsFiltre.length; i++) {
-    	var button = document.createElement("button");
-    	button.classList.add("boto_filtre");
-    	button.id = i;
-    	button.onclick = function(){activitatsfiltre(this.id)};
-    	button.innerHTML = omplirIdiomes(nivellsFiltre[i].nom);
-    	containerFiltre.appendChild(button);
+        if(classiUtilitzada[i]){
+            var button = document.createElement("button");
+            button.classList.add("boto_filtre");
+            button.id = i;
+            button.onclick = function(){activitatsfiltre(this.id)};
+            button.innerHTML = omplirIdiomes(nivellsFiltre[i].nom);
+            containerFiltre.appendChild(button);
+        }
     }
     section.appendChild(containerFiltre);
 

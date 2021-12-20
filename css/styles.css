@@ -208,7 +208,8 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
     min-height: 100%;
     margin-top: 1.5em;
     margin-bottom:2em;
-    padding: 20px;
+    padding: 20px 40px;
+
     display: flex;
     justify-content: center;
     align-content: center;
@@ -279,15 +280,16 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   /*padding: 10px;*/
   position: relative;
   display: block;
-  width: 325px;
-  height: 380px;
+  width: 280px;
+  height: 400px;
+  font-size: .9em;
   /*border: solid 1px black;*/
   border-radius: 10px;
   border-top-right-radius: 0px;
   overflow: hidden;
 }
 .activitat_Item h2{
-  margin-top: 80px;
+  margin-top: 120px;
   padding-top: 20px;
   height: 30px;
   position: relative;
@@ -297,7 +299,7 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   box-shadow: inset 0px -75px 15px -45px #0098ff;
 }
 .activitat_Item img{
-  height:130px;
+  height:170px;
   width:100%;
   z-index: 0;
   object-fit: cover;
@@ -446,8 +448,9 @@ a.logo, a.logo_{
   /*color: white;
   border: solid white 2px;*/
 }
-.whatsupBuble:hover{
+.whatsupBuble img:hover{
   /*background: #54ff94;*/
+  width:67px;
 }
 
 /* ------------------------------------------
