@@ -624,8 +624,15 @@ function omplirActivitat(a){
     for (var i = 0; i < activitats.length; i++) {
     	if (activitats[i].tipus == tipus){
     		var activitat = document.createElement("div");
-    		activitat.id = "item_activitats";
-    		activitat.innerHTML	= activitats[i].nom;
+    		activitat.classList.add("activitatItem");
+        	activitat.style.backgroundImage = 'url("' + activitats[i].img + '")';
+        	activitat.style.backgroundPosition = "center";
+        	activitat.style.backgroundSize = "cover";
+    		
+        	var nom = document.createElement("h2");
+    		nom.innerHTML = activitats[i].nom;
+    		activitat.appendChild(nom);
+
     		container.appendChild(activitat);
     	}
     }
