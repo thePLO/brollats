@@ -571,7 +571,7 @@ function omplirIdiomes(contingut) {
 
 //-----------------------
 
-function omplirActivitats(){
+function omplirSeccioActivitats(){
 	var section = document.getElementById("activitats");
     
     var title = document.createElement("h1");
