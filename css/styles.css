@@ -229,7 +229,7 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
 --------------------------------------------- */
 
 #container_activitats{
-    width: 100%;
+    width: 90%;
     max-width: 1400px;
     min-height: 100%;
     margin:auto;
@@ -680,7 +680,8 @@ a.logo, a.logo_{
   margin-top: 79px;
   text-decoration: none;
   color: white;
-
+  position: sticky;
+  top:79px;
   display: flex;
   justify-content: center;
   align-content: center;
