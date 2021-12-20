@@ -168,6 +168,10 @@ section.barranquisme::before{
   opacity: 0.3;
 }
 
+.spacerTOP{
+  height: 100px;
+}
+
 h1 {
   margin: .5em;
   margin-top: 1.5em;
@@ -319,7 +323,7 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   padding-top: 20px;
   height: 30px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   overflow: hidden;
   color:white;
   box-shadow: inset 0px -75px 15px -45px #0098ff;
@@ -677,18 +681,19 @@ a.logo, a.logo_{
 .submenu{
   width: 100%;
   background: #0098ff;
-  margin-top: 79px;
   text-decoration: none;
   color: white;
-  position: sticky;
+  position: fixed;
   top:79px;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   gap: 5px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
+
 .submenu-item{
   display: block;
   padding: 5px 7px;
