@@ -399,6 +399,60 @@ let activitats = [
 	},
 	{
 		tipus: 0,
+		nom: "CAGATE LORITO",
+		lloc: "ST LLORENÇ DE MONTGAI, NOGUERA, LLEIDA",
+		destacada: false,
+		nivell: 5,
+		nivellClassificacio:0,
+		preu: "90€",
+		foto:"",
+		video:"",
+		link:"",
+		descripcio: [
+			{
+				"ca": "Si tens experiència i vols portar el teu cos al límit, aquesta és una bona opció. Com un parc d’aventura a la paret, amb desploms, pèndols i una tirolina! Si t’emociona llegir-ho, imagina’t viure-ho acompanyat!",
+				"es": ""
+			}
+		]
+	},
+	{
+		tipus: 0,
+		nom: "FELIZ NAVIDAD",
+		lloc: "CORÇA, NOGUERA, LLEIDA",
+		destacada: false,
+		nivell: 5,
+		nivellClassificacio:0,
+		preu: "Consultar",
+		foto:"",
+		video:"",
+		link:"",
+		descripcio: [
+			{
+				"ca": "110 metres de longitud, llargs desploms i considerada la més complicada de les ferrades esportives instal·lades a Catalunya. Si el teu objectiu és portar el teu cos al límit, aquí estem nosaltres per acompanyar-te.",
+				"es": ""
+			}
+		]
+	},
+	{
+		tipus: 0,
+		nom: "EL CÍCLOPE",
+		lloc: "CORÇA, NOGUERA, LLEIDA",
+		destacada: false,
+		nivell: 6,
+		nivellClassificacio:0,
+		preu: "Consultar",
+		foto:"",
+		video:"",
+		link:"",
+		descripcio: [
+			{
+				"ca": "A diferència d'una ferrada, aquí la línia de vida serà la nostra corda, 100 metres de recorregut que exigeix gran esforç tant tècnic, com físic, com mental. Últim regal que ens deixen els nostres amics del JOM.",
+				"es": ""
+			}
+		]
+	},
+	{
+		tipus: 0,
 		nom: "ss",
 		lloc: "ss",
 		destacada: false,
@@ -463,6 +517,8 @@ var regalInfo = {
 	]
 }
 
+//-----------------------
+
 function omplirActivitats(){
 	var section = document.getElementById("activitats");
     
@@ -479,8 +535,7 @@ function omplirActivitats(){
         	"<span lang='es' translate=true style='display:none;'>" + activitat.descripcio[i].es + "</span>";
     	section.appendChild(paragraph);
     }
-}; //omplirActivitats();
-
+};
 function omplirTipusActivitats(){
 	var container = document.getElementById("container_activitats");
     for (var i = 0; i < tipusActivitat.length; i++) {
@@ -502,7 +557,7 @@ function omplirTipusActivitats(){
         
         var text = document.createElement("a");
         text.href = tipusActivitat[i].link;
-        text.target = "#";
+        //text.target = "#";
         text.classList.add("title");
         text.innerHTML = "<h2>" + 
         "<span lang='ca' translate=true>" + tipusActivitat[i].nom.ca + "</span>" +
@@ -512,7 +567,9 @@ function omplirTipusActivitats(){
        
         container.appendChild(element);
     }
-}; //omplirActivitats();
+};
+
+//-----------------------
 
 function getIndexTipus(a){
 	if (a==="ferrada") return 0;
@@ -522,7 +579,6 @@ function getIndexTipus(a){
 	else if (a==="orientacio") return 4;
 	else return -1;
 }
-
 function submenuActivitats(a){
 	var section = document.getElementById("contingut");
 	var tipus = getIndexTipus(a);
@@ -544,7 +600,6 @@ function submenuActivitats(a){
 	}
 	section.appendChild(submenu);
 }
-
 function omplirActivitat(a){
 	var section = document.getElementById("contingut");
 	var tipus = getIndexTipus(a);
@@ -562,7 +617,23 @@ function omplirActivitat(a){
         	"<span lang='es' translate=true style='display:none;'>" + tipusActivitat[tipus].descripcio[i].es + "</span>";
     	section.appendChild(paragraph);
     }
+
+    var container = document.createElement("div");
+    container.id = "container_activitats";
+
+    for (var i = 0; i < activitats.length; i++) {
+    	if (activitats[i].tipus == tipus){
+    		var activitat = document.createElement("div");
+    		activitat.id = "item_activitats";
+    		activitat.innerHTML	= activitats[i].nom;
+    		container.appendChild(activitat);
+    	}
+    }
+
+    section.appendChild(container);
 };
+
+//-----------------------
 
 function omplirBono(){
 	var section = document.getElementById("contingut");
