@@ -118,29 +118,73 @@ let tipusActivitat = [
 ];
 
 let nivells = [
-	{nom: "Iniciació", color:"#00BFFF"},			//0
-	{nom: "Fàcil", color:"#7FFF00"},				//1
-	{nom: "Mig", color:"#ffff00"},					//2
-	{nom: "Avançat", color:"#ff6600"},				//3
-	{nom: "Difícil", color:"#ff0000"},				//4
-	{nom: "Molt difícil", color:"#440000"},			//5
-	{nom: "Molt difícil +", color:"#000000"}		//6
+	{nom: {
+		ca: "Iniciació",
+		es: "Iniciación",
+		en: "Beginner",
+		}, color:"#00BFFF"},			//0
+	{nom: {
+		ca: "Fàcil",
+		es: "Facil",
+		en: "Easy",
+		}, color:"#7FFF00"},				//1
+	{nom: {
+		ca: "Mig",
+		es: "Medio",
+		en: "Average",
+		}, color:"#ffff00"},					//2
+	{nom: {
+		ca: "Avançat",
+		es: "Avanzado",
+		en: "Advanced",
+		}, color:"#ff6600"},				//3
+	{nom: {
+		ca: "Difícil",
+		es: "Difícil",
+		en: "Hard",
+		}, color:"#ff0000"},				//4
+	{nom: {
+		ca: "Molt difícil",
+		es: "Muy difícil",
+		en: "Very hard",
+		}, color:"#440000"},			//5
+	{nom: {
+		ca: "Molt difícil +",
+		es: "Muy difícil +",
+		en: "Very hard +",
+		}, color:"#000000"}		//6
 ]
 let nivellClassificació = [
 	{
-		nom: "Iniciació",
-		descripcio: "Ideal per un primer contacte, faamílies i grups d'amics sense exxperiència",
+		nom: {
+			ca: "Iniciació",
+			es: "Iniciación",
+			en: "Beginner",
+		},
+		descripcio: {
+			ca: "Ideal per un primer contacte, faamílies i grups d'amics sense exxperiència",
+			es: "",
+			en: "",
+		},
 		color:"#00ff00",
 		img:"source/img/slideInici/foto (4).webp"
 	},//0
 	{
-		nom: "Mig",
+		nom: {
+			ca: "Mig",
+			es: "Medio",
+			en: "Average",
+		},
 		descripcio: "Per a persones i grups que ja hagin tingut un primer contacte amb les vies ferrades",
 		color:"#ffff00",
 		img:"source/img/slideInici/foto (4).webp"
 	},				//1
 	{
-		nom: "Avançat",
+		nom: {
+			ca: "Avançat",
+			es: "Avanzado",
+			en: "Advanced",
+		},
 		descripcio: "Per a persones atrevides i valentes que tinguin experiència i bon nivell de condició física",
 		color:"#ff0000",
 		img:"source/img/slideInici/foto (4).webp"
@@ -155,7 +199,7 @@ let activitats = [
 		nivell: 1,
 		nivellClassificacio:0,
 		preu: "30€",
-		foto:"",
+		foto:"../media/img/activitats/calamoli.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -173,7 +217,7 @@ let activitats = [
 		nivell: 1,
 		nivellClassificacio:0,
 		preu: "35€",
-		foto:"",
+		foto:"../media/img/activitats/rocadelacreu.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -189,18 +233,18 @@ let activitats = [
 	},
 	{
 		tipus: 0,
-		nom: "ROCA NARIEDA (TRAM FAMILIAR)",
+		nom: "ROCA NARIEDA",
 		lloc: "FÍGOLS I ALINYÀ, ALT URGELL, LLEIDA",
 		destacada: false,
 		nivell: 1,
 		nivellClassificacio:0,
 		preu: "40€",
-		foto:"",
+		foto:"../media/img/activitats/rocanarieda_1.webp",
 		video:"",
 		link:"",
 		descripcio: [
 			{
-				"ca": "TRAM FAMILIAR.",
+				"ca": "<strong>TRAM FAMILIAR</strong>",
 				"es": ""
 			},
 			{
@@ -217,7 +261,7 @@ let activitats = [
 		nivell: 1,
 		nivellClassificacio:0,
 		preu: "45€",
-		foto:"",
+		foto:"../media/img/activitats/teletubbies.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -235,7 +279,7 @@ let activitats = [
 		nivell: 1,
 		nivellClassificacio:0,
 		preu: "45€",
-		foto:"",
+		foto:"../media/img/activitats/olmosoler.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -251,9 +295,9 @@ let activitats = [
 		lloc: "MUSARA, BAIX CAMP, TARRAGONA",
 		destacada: false,
 		nivell: 2,
-		nivellClassificacio:0,
+		nivellClassificacio:1,
 		preu: "45€",
-		foto:"",
+		foto:"../media/img/activitats/patacons.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -269,9 +313,9 @@ let activitats = [
 		lloc: "CENTELLES, OSONA, BARCELONA",
 		destacada: true,
 		nivell: 2,
-		nivellClassificacio:0,
+		nivellClassificacio:1,
 		preu: "35€",
-		foto:"",
+		foto:"../media/img/activitats/baumescorcades.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -287,9 +331,9 @@ let activitats = [
 		lloc: "FÍGOLS I ALINYÀ, ALT URGELL, LLEIDA",
 		destacada: false,
 		nivell: 2,
-		nivellClassificacio:0,
+		nivellClassificacio:1,
 		preu: "55€",
-		foto:"",
+		foto:"../media/img/activitats/rocanarieda_2.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -305,9 +349,9 @@ let activitats = [
 		lloc: "OLIANA, ALT URGELL, LLEIDA",
 		destacada: false,
 		nivell: 2,
-		nivellClassificacio:0,
+		nivellClassificacio:1,
 		preu: "Consultar",
-		foto:"",
+		foto:"../media/img/activitats/serradelescanals.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -323,9 +367,9 @@ let activitats = [
 		lloc: "ROJALONS, CONCA DE BARBERÀ, TARRAGONA",
 		destacada: false,
 		nivell: 2,
-		nivellClassificacio:0,
+		nivellClassificacio:1,
 		preu: "Consultar",
-		foto:"",
+		foto:"../media/img/activitats/venesrojalons.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -341,9 +385,9 @@ let activitats = [
 		lloc: "COLLBATÓ, BAIX LLOBREGAT, BARCELONA",
 		destacada: false,
 		nivell: 4,
-		nivellClassificacio:0,
+		nivellClassificacio:1,
 		preu: "45€",
-		foto:"",
+		foto:"../media/img/activitats/damas.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -359,7 +403,7 @@ let activitats = [
 		lloc: "MONTSERRAT, BAGES, BARCELONA",
 		destacada: false,
 		nivell: 4,
-		nivellClassificacio:0,
+		nivellClassificacio:2,
 		preu: "Consultar",
 		foto:"",
 		video:"",
@@ -381,7 +425,7 @@ let activitats = [
 		lloc: "CORÇA, NOGUERA, LLEIDA",
 		destacada: false,
 		nivell: 4,
-		nivellClassificacio:0,
+		nivellClassificacio:2,
 		preu: "Consultar",
 		foto:"",
 		video:"",
@@ -403,9 +447,9 @@ let activitats = [
 		lloc: "ST LLORENÇ DE MONTGAI, NOGUERA, LLEIDA",
 		destacada: false,
 		nivell: 5,
-		nivellClassificacio:0,
+		nivellClassificacio:2,
 		preu: "90€",
-		foto:"",
+		foto:"../media/img/activitats/cagatelorito.webp",
 		video:"",
 		link:"",
 		descripcio: [
@@ -421,7 +465,7 @@ let activitats = [
 		lloc: "CORÇA, NOGUERA, LLEIDA",
 		destacada: false,
 		nivell: 5,
-		nivellClassificacio:0,
+		nivellClassificacio:2,
 		preu: "Consultar",
 		foto:"",
 		video:"",
@@ -439,7 +483,7 @@ let activitats = [
 		lloc: "CORÇA, NOGUERA, LLEIDA",
 		destacada: false,
 		nivell: 6,
-		nivellClassificacio:0,
+		nivellClassificacio:2,
 		preu: "Consultar",
 		foto:"",
 		video:"",
@@ -451,7 +495,7 @@ let activitats = [
 			}
 		]
 	},
-	{
+	/*{
 		tipus: 0,
 		nom: "ss",
 		lloc: "ss",
@@ -468,7 +512,7 @@ let activitats = [
 				"es": "fdsa"
 			}
 		]
-	},
+	},*/
 
 ];
 
@@ -517,22 +561,26 @@ var regalInfo = {
 	]
 }
 
+function omplirIdiomes(contingut) {
+	var innerHTML = 
+		"<span lang='ca' translate=true>" + contingut.ca + "</span>" +
+        "<span lang='es' translate=true style='display:none;'>" + contingut.es + "</span>"+
+        "<span lang='en' translate=true style='display:none;'>" + contingut.en + "</span>";
+    return innerHTML;
+}
+
 //-----------------------
 
 function omplirActivitats(){
 	var section = document.getElementById("activitats");
     
     var title = document.createElement("h1");
-    title.innerHTML = 
-        "<span lang='ca' translate=true>" + activitat.nom.ca + "</span>" +
-        "<span lang='es' translate=true style='display:none;'>" + activitat.nom.es + "</span>";
+    title.innerHTML = omplirIdiomes(activitat.nom);
     section.appendChild(title);
 
     for (var i = 0; i < activitat.descripcio.length; i++) {
     	var paragraph = document.createElement("p");
-    	paragraph.innerHTML = 
-        	"<span lang='ca' translate=true>" + activitat.descripcio[i].ca + "</span>" +
-        	"<span lang='es' translate=true style='display:none;'>" + activitat.descripcio[i].es + "</span>";
+    	paragraph.innerHTML = omplirIdiomes(activitat.descripcio[i]);
     	section.appendChild(paragraph);
     }
 };
@@ -541,7 +589,7 @@ function omplirTipusActivitats(){
     for (var i = 0; i < tipusActivitat.length; i++) {
         var element = document.createElement("div");
         //element.id = i;
-        element.classList.add("activitatItem");
+        element.classList.add("activitat");
         element.style.backgroundImage = 'url("' + tipusActivitat[i].img + '")';
         element.style.backgroundPosition = "center";
         element.style.backgroundSize = "cover";
@@ -559,10 +607,7 @@ function omplirTipusActivitats(){
         text.href = tipusActivitat[i].link;
         //text.target = "#";
         text.classList.add("title");
-        text.innerHTML = "<h2>" + 
-        "<span lang='ca' translate=true>" + tipusActivitat[i].nom.ca + "</span>" +
-        "<span lang='es' translate=true style='display:none;'>" + tipusActivitat[i].nom.es + "</span>" +
-        "</h2>";
+        text.innerHTML = "<h2>" + omplirIdiomes(tipusActivitat[i].nom) + "</h2>";
         element.appendChild(text);
        
         container.appendChild(element);
@@ -592,46 +637,100 @@ function submenuActivitats(a){
 		if(i==tipus) submenuItem.classList.add("active");
 			var link = document.createElement("a");
 			link.href=tipusActivitat[i].link;
-			link.innerHTML=
-				"<span lang='ca' translate=true>" + tipusActivitat[i].nom.ca + "</span>" +
-        		"<span lang='es' translate=true style='display:none;'>" + tipusActivitat[i].nom.es + "</span>";
+			link.innerHTML= omplirIdiomes(tipusActivitat[i].nom);
         	submenuItem.appendChild(link);
         submenu.appendChild(submenuItem);
 	}
 	section.appendChild(submenu);
+}
+function activitatsfiltre(a){
+	console.log(a);
+	let action = parseInt(a);
+	var container = document.getElementById("container_activitats");
+	for (var i = 0; i < container.children.length; i++) {
+		if (action == -1) container.children[i].style.display="block";
+		else {
+			if (container.children[i].classList.contains("classificacio"+action)) container.children[i].style.display="block";
+			else container.children[i].style.display="none";
+		}
+	}
+	var botons = document.getElementsByClassName("containerFiltre")[0].children;
+	for (var i = 0; i < botons.length; i++){ botons[i].classList.remove("active");}
+	botons[action+1].classList.add("active");
 }
 function omplirActivitat(a){
 	var section = document.getElementById("contingut");
 	var tipus = getIndexTipus(a);
 
 	var title = document.createElement("h1");
-    title.innerHTML = 
-        "<span lang='ca' translate=true>" + tipusActivitat[tipus].nom.ca + "</span>" +
-        "<span lang='es' translate=true style='display:none;'>" + tipusActivitat[tipus].nom.es + "</span>";
+    title.innerHTML = omplirIdiomes(tipusActivitat[tipus].nom);
     section.appendChild(title);
 
     for (var i = 0; i < tipusActivitat[tipus].descripcio.length; i++) {
     	var paragraph = document.createElement("p");
-    	paragraph.innerHTML = 
-        	"<span lang='ca' translate=true>" + tipusActivitat[tipus].descripcio[i].ca + "</span>" +
-        	"<span lang='es' translate=true style='display:none;'>" + tipusActivitat[tipus].descripcio[i].es + "</span>";
+    	paragraph.innerHTML = omplirIdiomes(tipusActivitat[tipus].descripcio[i]);
     	section.appendChild(paragraph);
     }
 
+    var containerFiltre = document.createElement("div");
+    containerFiltre.classList.add("containerFiltre");
+
+    var button_all = document.createElement("button");
+    let allString = {ca: "Tot", es: "Todo", en: "All"};
+    button_all.classList.add("boto_filtre");
+    button_all.classList.add("active");
+    button_all.onclick = function(){activitatsfiltre(-1)};
+    button_all.innerHTML = omplirIdiomes(allString);
+    containerFiltre.appendChild(button_all)
+    for (var i = 0; i < nivellClassificació.length; i++) {
+    	var button = document.createElement("button");
+    	button.classList.add("boto_filtre");
+    	button.id = i;
+    	button.onclick = function(){activitatsfiltre(this.id)};
+    	button.innerHTML = omplirIdiomes(nivellClassificació[i].nom);
+    	containerFiltre.appendChild(button);
+    }
+
+    section.appendChild(containerFiltre);
+
     var container = document.createElement("div");
     container.id = "container_activitats";
-
     for (var i = 0; i < activitats.length; i++) {
     	if (activitats[i].tipus == tipus){
     		var activitat = document.createElement("div");
-    		activitat.classList.add("activitatItem");
-        	activitat.style.backgroundImage = 'url("' + activitats[i].img + '")';
-        	activitat.style.backgroundPosition = "center";
-        	activitat.style.backgroundSize = "cover";
-    		
+    		activitat.classList.add("activitat_Item");
+    		activitat.classList.add("classificacio"+activitats[i].nivellClassificacio);
+    		activitat.classList.add("nivell"+activitats[i].nivell);
+
+    		var img = document.createElement("img");
+    		if(activitats[i].foto != "") img.src = activitats[i].foto;
+    		else  img.src = "../media/img/activitats/default.webp";
+    		activitat.appendChild(img);
+
         	var nom = document.createElement("h2");
     		nom.innerHTML = activitats[i].nom;
     		activitat.appendChild(nom);
+
+    		var lloc = document.createElement("div");
+    		lloc.innerHTML = activitats[i].lloc;
+    		lloc.classList.add("detall");
+    		activitat.appendChild(lloc);
+
+    		for (var j = 0; j < activitats[i].descripcio.length; j++) {
+    			var descripcio = document.createElement("p");
+    			descripcio.innerHTML = omplirIdiomes(activitats[i].descripcio[j]);
+    			activitat.appendChild(descripcio);
+    		}
+
+    		var preu = document.createElement("span");
+    		preu.classList.add("preu");
+    		preu.innerHTML = activitats[i].preu;
+    		activitat.appendChild(preu);
+
+    		var preu = document.createElement("span");
+    		preu.classList.add("nivell");
+    		preu.innerHTML = omplirIdiomes(nivells[activitats[i].nivell].nom);
+    		activitat.appendChild(preu);
 
     		container.appendChild(activitat);
     	}
@@ -646,16 +745,12 @@ function omplirBono(){
 	var section = document.getElementById("contingut");
 	
 	var title = document.createElement("h1");
-    title.innerHTML = 
-        "<span lang='ca' translate=true>" + regalInfo.titol.ca + "</span>" +
-        "<span lang='es' translate=true style='display:none;'>" + regalInfo.titol.es + "</span>";
+    title.innerHTML = omplirIdiomes(regalInfo.titol);
     section.appendChild(title);
 
     for (var i = 0; i < regalInfo.info.length; i++) {
     	var paragraph = document.createElement("p");
-    	paragraph.innerHTML = 
-        	"<span lang='ca' translate=true>" + regalInfo.info[i].ca + "</span>" +
-        	"<span lang='es' translate=true style='display:none;'>" + regalInfo.info[i].es + "</span>";
+    	paragraph.innerHTML = omplirIdiomes(regalInfo.info[i]);
     	section.appendChild(paragraph);
     }
 }

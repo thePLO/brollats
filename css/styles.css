@@ -206,7 +206,7 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
 #container_activitats{
     min-width: 90%;
     min-height: 100%;
-    margin-top: 3em;
+    margin-top: 1.5em;
     margin-bottom:2em;
     padding: 20px;
     display: flex;
@@ -216,7 +216,7 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
     gap: 10px;
     flex-wrap: wrap;
 }
-.activitatItem{
+.activitat{
   margin:0;
   padding: 0;
   position: relative;
@@ -227,10 +227,10 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   border-radius: 5px;
   overflow: hidden;
 }
-.activitatItem:hover{
+.activitat:hover{
   border: solid 1px red;
 }
-.activitatItem video {
+.activitat video {
   width: 100%;
   min-height: 100%;
   top:0; left: 0;
@@ -238,7 +238,7 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   object-fit: cover;
   z-index: -3;
 }
-.activitatItem a {
+.activitat a {
   display: block;
   position: absolute;
   width: 100%;
@@ -247,9 +247,97 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   background-color: rgba(0,0,0,0.5);
   text-decoration: none;
 }
-.activitatItem h2 {
+.activitat h2 {
   color: white;
 }
+
+/* ------------------------------------------
+  Activitat concreta
+--------------------------------------------- */
+
+.containerFiltre{
+  margin-top: 2em;
+}
+.boto_filtre{
+  border: none;
+  background: #69c2ff;
+  color: white;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 10px
+}
+.boto_filtre.active{
+  background-color: #0098ff;
+}
+
+.activitat_Item{
+  background-color: #bfe5ff;
+  color: #0082d9;
+  margin:10px;
+  /*padding: 10px;*/
+  position: relative;
+  display: block;
+  width: 325px;
+  height: 380px;
+  /*border: solid 1px black;*/
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  overflow: hidden;
+}
+.activitat_Item h2{
+  margin-top: 80px;
+  padding-top: 20px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  color:white;
+  box-shadow: inset 0px -75px 15px -45px #0098ff;
+}
+.activitat_Item img{
+  height:130px;
+  width:100%;
+  z-index: 0;
+  object-fit: cover;
+  object-position: 50% 75%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.activitat_Item .detall{
+  font-size: 0.8em;
+  color: #bfe5ff;
+  background-color: #0098ff;
+  width: 100%;
+  padding-bottom: 3px;
+}
+.activitat_Item .preu{
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width:100%;
+}
+.activitat_Item .nivell{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 25px;
+  padding: 5px 10px;
+  border-bottom-left-radius: 10px;
+  line-height: 25px;
+  font-weight: bold;
+  opacity: 0.75;
+}
+.nivell0 .nivell{ background-color: #00BFFF; color: white;}
+.nivell1 .nivell{ background-color: #7FFF00; color: black;}
+.nivell2 .nivell{ background-color: #ffff00; color: black;}
+.nivell3 .nivell{ background-color: #ff6600; color: black;}
+.nivell4 .nivell{ background-color: #ff0000; color: white;}
+.nivell5 .nivell{ background-color: #440000; color: white;}
+.nivell6 .nivell{ background-color: #000000; color: red;}
+
 
 section.bono{
   margin-top: 79px;
