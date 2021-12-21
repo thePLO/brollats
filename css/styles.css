@@ -132,6 +132,10 @@ body {
   font: normal 100%/1.4 sans-serif;
 }
 
+p{
+  max-width: 1000px;
+}
+
 section {
   /*border-bottom: 1px dotted #999;*/
   text-align: center;
@@ -167,6 +171,31 @@ section.barranquisme::before{
   background-attachment: fixed;
   opacity: 0.3;
 }
+section#activitats::before{
+  content: ""; z-index: -1;
+  width: 100%; height:100%;
+  position: absolute;
+  top: 0; left:0;
+  background-image: url("../media/img/bg_activitats.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 30%;
+  background-attachment: fixed;
+  opacity: 0.3;
+}
+section#lloguer::before{
+  content: ""; z-index: -1;
+  width: 100%; height:100%;
+  position: absolute;
+  top: 0; left:0;
+  background-image: url("../media/img/bg_material.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.3;
+}
+
 
 .spacerTOP{
   height: 100px;
@@ -174,7 +203,7 @@ section.barranquisme::before{
 
 h1 {
   margin: .5em;
-  margin-top: 1.5em;
+  margin-top: 2em;
   color:#0082d9;
 }
 h2{
@@ -389,20 +418,49 @@ section.bono{
 
 #container_material{
     min-width: 90%;
+    max-width: 1400px;
     min-height: 100%;
-    margin-top: 3em;
-    margin-bottom:2em;
-    padding: 20px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
     align-items: base-line;
     gap: 30px;
     flex-wrap: wrap;
 }
+.materialActivitat{
+  border-radius: 10px;
+  height: 320px;
+  width: 300px;
+  background-color: rgba(255,255,255,.6);
+  padding: 30px;
+  position: relative;
+}
+#item_reserva{
+  width: 500px;
+  height: auto;
+}
+#item_reserva a{
+  text-decoration: none;
+  color:#0082d9;
+}
+
+.materialActivitat .preu{
+  position: absolute;
+  bottom:30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
 #container_material ul{
   list-style-type: none;
+  margin-top:2em;
 }
+
 #container_material .detall{
   font-size: 0.8em;
 }

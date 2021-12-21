@@ -57,7 +57,7 @@ let tipusActivitat = [
 			}
 		],
 		"link":"/brollats/activitats/escalada.html",
-		"img":"/brollats/media/img/slideInici/foto (4).webp",
+		"img":"/brollats/media/img/escalada.webp",
 		"video":""
 	},
 	{//3	
@@ -76,7 +76,7 @@ let tipusActivitat = [
 			}
 		],
 		"link":"/brollats/activitats/raquetes.html",
-		"img":"/brollats/media/img/slideInici/foto (7).webp",
+		"img":"/brollats/media/img/raquetes.webp",
 		"video":""
 	},
 	{//4
@@ -95,7 +95,7 @@ let tipusActivitat = [
 			}
 		],
 		"link":"/brollats/activitats/orientacio.html",
-		"img":"/brollats/media/img/slideInici/foto (2).webp",
+		"img":"/brollats/media/img/orientacio.webp",
 		"video":""
 	}
 ];

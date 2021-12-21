@@ -126,7 +126,7 @@ function hovered(id){
 }
 
 function activitatsfiltre(a){
-	console.log(a);
+	//console.log(a);
 	let action = parseInt(a);
 	var container = document.getElementById("container_activitats");
 	for (var i = 0; i < container.children.length; i++) {
@@ -138,7 +138,8 @@ function activitatsfiltre(a){
 	}
 	var botons = document.getElementsByClassName("containerFiltre")[0].children;
 	for (var i = 0; i < botons.length; i++){ botons[i].classList.remove("active");}
-	botons[action+1].classList.add("active");
+	if(action+1<botons.length) botons[action+1].classList.add("active");
+    else botons[botons.length-1].classList.add("active");
 }
 function omplirActivitat(a){
 	var section = document.getElementById("contingut");
@@ -246,4 +247,73 @@ function omplirBono(){
     	paragraph.innerHTML = omplirIdiomes(bonoRegal.info[i]);
     	section.appendChild(paragraph);
     }
+}
+
+//-----------------------
+function omplirMaterial(){
+    var section = document.getElementById("lloguer");
+
+    var title = document.createElement("h1");
+    title.innerHTML = omplirIdiomes(materialInfo.titol);
+    section.appendChild(title);
+
+    for (var i = 0; i < materialInfo.descripcio.length; i++) {
+        var paragraph = document.createElement("p");
+        paragraph.innerHTML = omplirIdiomes(materialInfo.descripcio[i]);
+        section.appendChild(paragraph);
+    }
+
+    var container_material = document.createElement("div");
+    container_material.id = "container_material";
+
+    for (var i = 0; i < materialInfo.activitat.length; i++) {
+        var fitxaMaterial = document.createElement("div");
+        fitxaMaterial.classList.add("materialActivitat");
+
+        var title = document.createElement("h2");
+        title.innerHTML = omplirIdiomes(materialInfo.activitat[i].titol);
+        fitxaMaterial.appendChild(title);
+
+        var llista = document.createElement("ul");
+        for (var j = 0; j < materialInfo.activitat[i].llista.length; j++) {
+            var item_llista = document.createElement("li");
+            item_llista.innerHTML = omplirIdiomes(materialInfo.activitat[i].llista[j]);
+            llista.appendChild(item_llista);
+        }
+        fitxaMaterial.appendChild(llista);
+
+        var preu = document.createElement("div");
+        preu.classList.add("preu");
+        preu.innerHTML = omplirIdiomes(materialInfo.activitat[i].preu);
+        fitxaMaterial.appendChild(preu);
+
+        container_material.appendChild(fitxaMaterial);
+    }
+
+    section.appendChild(container_material);
+
+    var container_reserva = document.createElement("div");
+    container_reserva.id = "container_material";
+    var item_reserva = document.createElement("div");
+    item_reserva.classList.add("materialActivitat");
+    item_reserva.id = "item_reserva";
+
+    for (var i = 0; i < materialInfo.reserva.length; i++) {
+        var paragraph = document.createElement("p");
+        paragraph.innerHTML = omplirIdiomes(materialInfo.reserva[i]);
+        item_reserva.appendChild(paragraph);
+    }
+
+    var contacte = document.createElement("div");
+    contacte.innerHTML = "<a href='mailto:info@brollats.cat'><i class='far fa-envelope'></i></a><br>" +
+    "<a href='mailto:info@brollats.cat'>info@brollats.cat</a><br>" +
+    "<a href=tel:'+34644433597'><i class='fas fa-phone'></i>  " +
+    "<a href='https://api.whatsapp.com/send?phone=34644433597&text=En%20que%20et%20podem%20ajudar?' target='_blank'><i class='fab fa-whatsapp'></i></a><br>" + 
+    "<a href='tel:+34644433597'>644 433 597</a>";
+    item_reserva.appendChild(contacte);
+    
+    container_reserva.appendChild(item_reserva);
+
+    section.appendChild(container_reserva);
+    
 }

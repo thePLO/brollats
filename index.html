@@ -14,12 +14,14 @@
       <link rel="stylesheet" href="css/ie.css">
     <![endif]-->
     <script src="js/responsive-nav.js"></script>
+    
     <script src="js/data/seccioActivitat.js"></script>
     <script src="js/data/tipusActivitats.js"></script>
     <script src="js/data/activitatsData.js"></script>
     <script src="js/data/nivells.js"></script>
     <script src="js/data/nivellsFiltre.js"></script>
     <script src="js/data/bonoRegal.js"></script>
+    <script src="js/data/material.js"></script>
 
     <script src="js/activitats.js"></script>
   </head>
@@ -38,9 +40,9 @@
         <ul>
           <li class="menu-item active"><a href="#inici" data-scroll id="menu1">Inici</a></li>
           <li class="menu-item"><a href="#activitats" data-scroll id="menu2">Activitats</a></li>
-          <li class="menu-item"><a href="#calendari" data-scroll id="menu3">Calendari</a></li>
+          <!--<li class="menu-item"><a href="#calendari" data-scroll id="menu3">Calendari</a></li>-->
           <li class="menu-item"><a href="#lloguer" data-scroll id="menu4">Lloguer de material</a></li>
-          <li class="menu-item"><a href="#contacte" data-scroll id="menu5">Contacte</a></li>
+          <!--<li class="menu-item"><a href="#contacte" data-scroll id="menu5">Contacte</a></li>-->
           <li class="menu-item">
             <div class="social"> 
                 <a class="social" href="https://www.instagram.com/brollats/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -87,7 +89,7 @@
       </script>-->
     </section>
 
-    <section id="calendari">
+    <!--<section id="calendari">
       <h1>Calendari</h1>
       <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23039BE5&ctz=Europe%2FMadrid&mode=AGENDA&showTitle=0&showNav=0&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&title=Calendari%20d'activitats%20WEB&src=YnJvbGxhdHNndWllc0BnbWFpbC5jb20&src=dDBnZ3Z2bjAzdWFpMTdyZDQzYWlnZTNkMzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=MnQxOWxhc2Y1dWhkNDdzcW9yMGZvMGY2c3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=b21pZ3VlbHNhQGdtYWlsLmNvbQ&color=%23C0CA33&color=%23009688&color=%23039BE5&color=%23B39DDB" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       <script type="javascript">
@@ -97,90 +99,14 @@
               y[i].id = "calHidded";
           }
       </script>
-    </section>
+    </section>-->
 
-    <section id="lloguer">
-      <h1>
-        <span lang='ca'translate=true>Lloguer de material</span>
-        <span lang='es' translate=true style="display:none;">Alquiler de material</span>
-      </h1>
-      <p>
-        <span lang='ca'translate=true>Si el que necessites és material per fer alguna activitat de barranquisme o vies ferrades per anar pel vostre compte, nosaltres també t'ho oferim. Aquí trobaràs els preus del material que necessites per fer l'activitat que vulguis.</span>
-        <span lang='es' translate=true style="display:none;">Si lo que necesitas es material para hacer alguna actividad de barranquismo o vías ferratas para ir por su cuenta, nosotros también te lo ofrecemos. Aquí encontrarás los precios del material que necesitas para realizar la actividad que quieras.</span>
-      </p>
-      <div id="container_material">
-        <div id="ferrada_material" class="materialActivitat">
-          <h2><span lang='ca'translate=true>Material de ferrades</span></h2>
-          <h2><span lang='es' translate=true style="display:none;">Material de ferratas</span></h2>
-          <ul>
-            <li>
-              <span lang='ca'translate=true>arnés</span>
-              <span lang='es' translate=true style="display:none;">arnés</span>
-            </li>
-            <li>
-              <span lang='ca'translate=true>casc</span>
-              <span lang='es' translate=true style="display:none;">casco</span>
-            </li>
-            <li>
-              <span lang='ca'translate=true>dissipador</span>
-              <span lang='es' translate=true style="display:none;">disipador</span>
-            </li>
-            <li>
-              <span lang='ca'translate=true>vaga d'ancoratge</span>
-              <span lang='es' translate=true style="display:none;">cabo de anclaje</span>
-            </li>
-            <p><br>
-              <span lang='ca'translate=true><strong>Preu:</strong> 18 €</span>
-              <span lang='es' translate=true style="display:none;"><strong>Precio:</strong> 18 €</span>
-            </p>
-          </ul>
-        </div>
-        <div id="barranc_material" class="materialActivitat">
-          <h2>
-            <span lang='ca'translate=true>Material de barranquisme</span>
-            <span lang='es' translate=true style="display:none;">Material de barranquismo</span>
-          </h2>
-          <ul>
-            <li>
-              <span lang='ca'translate=true>neoprè</span>
-              <span lang='es' translate=true style="display:none;">neopreno</span>
-            </li>
-            <span lang='ca'translate=true class="detall">(mono peça o dues peces)</span>
-            <span lang='es' translate=true style="display:none;" class="detall">(mono pieza o dos piezas)</span>
-            <li>
-              <span lang='ca'translate=true>casc</span>
-              <span lang='es' translate=true style="display:none;">casco</span>
-            </li>
-            <li>
-              <span lang='ca'translate=true>arnés amb culera</span>
-              <span lang='es' translate=true style="display:none;">arnés con culera</span>
-            </li>
-            <li>
-              <span lang='ca'translate=true>vaga d'ancoratge 2 punts</span>
-              <span lang='es' translate=true style="display:none;">cabo de anclaje 2 puntos</span>
-            </li>
-            <li>
-              <span lang='ca'translate=true>vuit amb mosquetó de seguretat</span>
-              <span lang='es' translate=true style="display:none;">ocho con mosquetón de seguridad</span>
-            </li>
-            <li>
-              <span lang='ca'translate=true>escarpins</span>
-              <span lang='es' translate=true style="display:none;">escarpines</span>
-            </li>
-            <span lang='ca'translate=true class="detall">(mitjons de neoprè)</span>
-            <span lang='es' translate=true style="display:none;" class="detall">(calcetines de neopreno)</span>
-            <p><br>
-              <span lang='ca'translate=true><strong>Preu:</strong> 28 €</span>
-              <span lang='es' translate=true style="display:none;"><strong>Precio:</strong> 28 €</span>
-            </p>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <section id="lloguer"></section>
+    <script>omplirMaterial();</script>
 
-    <section id="contacte">
+    <!--<section id="contacte">
       <h1>Contacte</h1>
-    </section> 
+    </section>-->
   </body>
 
   <script src="js/fastclick.js"></script>

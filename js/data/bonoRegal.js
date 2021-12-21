@@ -1,4 +1,4 @@
-let bonoRegal = [{
+let bonoRegal = {
 	"titol":{
 		"ca": "Bono regal",
 		"es": "Bono regalo",
@@ -50,4 +50,4 @@ let bonoRegal = [{
 		"/brollats/media/img/bonoregal/1.webp",
 		"/brollats/media/img/bonoregal/2.webp"
 	]
-}];
+};
