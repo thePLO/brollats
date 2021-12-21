@@ -111,7 +111,7 @@ function submenuDesplegable(){
 
     if (hovered && submenu[0].style.top != "79px") submenu[0].style.top = "79px";
     else if (!hovered && submenu[0].style.top == "79px") submenu[0].style.top = "45px";
-    console.log(hovered);
+    //console.log(hovered);
 });
 
 }
