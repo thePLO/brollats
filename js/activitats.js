@@ -22,6 +22,8 @@ function omplirSeccioActivitats(){
     	paragraph.innerHTML = omplirIdiomes(seccioActivitat.descripcio[i]);
     	section.appendChild(paragraph);
     }
+
+    //bono!
 };
 
 function omplirTipusActivitats(){
@@ -247,6 +249,21 @@ function omplirBono(){
     	paragraph.innerHTML = omplirIdiomes(bonoRegal.info[i]);
     	section.appendChild(paragraph);
     }
+    var container_exemples = document.createElement("div");
+    container_exemples.id = "container_material";
+
+    for (var i = 0; i < bonoRegal.exemples.length; i++) {
+        var exemple = document.createElement("div");
+        exemple.classList.add("exemple");
+
+        var foto = document.createElement("img");
+        foto.src = bonoRegal.exemples[i];
+        exemple.appendChild(foto);
+
+        container_exemples.appendChild(exemple);
+    }
+
+    section.appendChild(container_exemples);
 }
 
 //-----------------------
