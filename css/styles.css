@@ -326,8 +326,10 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   color: white;
 }
 
-section#activitats button{
+section#activitats #infoButton{
+  appearance: button;
   border: none;
+  text-decoration: none;
   cursor: pointer;
   font-size: 1.5em;
   background: #0082d9;
@@ -336,7 +338,7 @@ section#activitats button{
   padding: 20px;
   border-radius: 20px;
 }
-section#activitats button:hover {
+section#activitats #infoButton:hover {
   background-color: rgba(0,0,0,0.3);
   background: #0098ff;
 }

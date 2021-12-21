@@ -39,6 +39,7 @@ function omplirSeccioActivitats2(){
     var foto = document.createElement("img");
     foto.src = bonoRegal.exemples[0];
     foto.height= "310px";
+    foto.id = "fotoBonoRegal"
     fitxaExemple.appendChild(foto);
 
     container_bono.appendChild(fitxaExemple);
@@ -56,8 +57,9 @@ function omplirSeccioActivitats2(){
         fitxaInfo.appendChild(paragraph);
     }
 
-    var infoButton = document.createElement("button");
+    var infoButton = document.createElement("a");
     infoButton.innerHTML = omplirIdiomes(bonoRegal.mesInfo);
+    infoButton.id = "infoButton";
     infoButton.href = bonoRegal.link;
     fitxaInfo.appendChild(infoButton);
 
