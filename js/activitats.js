@@ -66,9 +66,8 @@ function getIndexTipus(a){
 }
 
 
-
 function submenuActivitats(a){
-	var section = document.getElementById("contingut");
+	var section = document.body;
 	var tipus = getIndexTipus(a);
 
 	var submenu = document.createElement("div");
@@ -78,14 +77,54 @@ function submenuActivitats(a){
 		var submenuItem = document.createElement("div");
 		submenuItem.classList.add("submenu-item");
 		if(i==tipus) submenuItem.classList.add("active");
-			var link = document.createElement("a");
-			link.href=tipusActivitat[i].link;
-			link.innerHTML= omplirIdiomes(tipusActivitat[i].nom);
-        	submenuItem.appendChild(link);
+		var link = document.createElement("a");
+		    link.href=tipusActivitat[i].link;
+		    link.innerHTML= omplirIdiomes(tipusActivitat[i].nom);
+            submenuItem.appendChild(link);
         submenu.appendChild(submenuItem);
 	}
 	section.appendChild(submenu);
 }
+
+function submenuDesplegable(){
+    const isHover = e => e.parentElement.querySelector(':hover') === e;
+    document.addEventListener('mousemove', function checkHover() {
+        var actButton = document.getElementById("menu2");
+        var hovered = false;
+    /*if (actButton.parentElement.classList.contains("active")){
+        hovered = true;
+    }
+    else {*/
+        var menu = document.getElementsByClassName("menu-item");
+        var submenu = document.getElementsByClassName("submenu"); 
+        for (var i = menu.length - 1; i >= 0; i--){
+            if(hovered) break;
+            if(menu[i].children[0].id == "menu2") hovered = isHover(menu[i]);
+        }
+        for (var i = submenu.length - 1; i >= 0; i--){
+            if(hovered) break;
+            hovered = isHover(submenu[i]);
+        }
+    //}
+    if(hovered) actButton.classList.add("hovered");
+    else actButton.classList.remove("hovered");
+
+    if (hovered && submenu[0].style.top != "79px") submenu[0].style.top = "79px";
+    else if (!hovered && submenu[0].style.top == "79px") submenu[0].style.top = "45px";
+    console.log(hovered);
+});
+
+}
+
+function hovered(id){
+    var menu = document.getElementsByClassName("menu-item");
+    for (var i = menu.length - 1; i >= 0; i--) {
+        menu[i].classList.remove("hovered");
+        console.log(menu[i])
+        if (menu[i].id == id) menu[i].classList.add("hovered");
+    }
+}
+
 function activitatsfiltre(a){
 	console.log(a);
 	let action = parseInt(a);

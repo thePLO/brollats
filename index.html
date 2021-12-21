@@ -20,6 +20,8 @@
     <script src="js/data/nivells.js"></script>
     <script src="js/data/nivellsFiltre.js"></script>
     <script src="js/data/bonoRegal.js"></script>
+
+    <script src="js/activitats.js"></script>
   </head>
   <body>
 
@@ -32,9 +34,9 @@
 
     <header>
       <a href="#inici" class="logo" data-scroll><img src="media\img\logo_inici.png" class="logo" height="45px"></a>
-      <nav class="nav-collapse">
+      <nav class="nav-collapse" id="mainMenu" >
         <ul>
-          <li class="menu-item"><a href="#inici" data-scroll id="menu1">Inici</a></li>
+          <li class="menu-item active"><a href="#inici" data-scroll id="menu1">Inici</a></li>
           <li class="menu-item"><a href="#activitats" data-scroll id="menu2">Activitats</a></li>
           <li class="menu-item"><a href="#calendari" data-scroll id="menu3">Calendari</a></li>
           <li class="menu-item"><a href="#lloguer" data-scroll id="menu4">Lloguer de material</a></li>
@@ -52,10 +54,16 @@
     </header>
 
     <a class="whatsupBuble" href="https://api.whatsapp.com/send?phone=34644433597&text=En%20que%20et%20podem%20ajudar?" target="_blank"><img src="media/img/logo_whatsapp.png" width="65px"></a>
-
+    
+    <script>
+      var tipus = "none";
+      submenuActivitats(tipus);
+      var submenu = document.getElementsByClassName("submenu");
+      submenu[0].style.top = "45px";
+      submenuDesplegable();
+    </script>
 
     <section id="inici">
-      
       <div id="imatgesInici"> </div>
       <script src="js/slideFotosInici.js"></script>
       <a class="slidesNav" id="left" onclick="previousImage();"><i class="fas fa-chevron-left"></i></a>
@@ -63,7 +71,6 @@
     </section>
 
     <section id="activitats">
-      <script src="js/activitats.js"></script>
       <script>omplirSeccioActivitats();</script>   
       <div id="container_activitats"></div>
       <script>omplirTipusActivitats();</script>
