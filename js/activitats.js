@@ -24,6 +24,45 @@ function omplirSeccioActivitats(){
     }
 
     //bono!
+}
+function omplirSeccioActivitats2(){
+
+    var section = document.getElementById("activitats");
+
+    var container_bono = document.createElement("div");
+    container_bono.id = "container_material";
+
+    var fitxaExemple = document.createElement("div");
+    fitxaExemple.classList.add("materialActivitat");
+    fitxaExemple.id = "item_reserva";
+
+    var foto = document.createElement("img");
+    foto.src = bonoRegal.exemples[0];
+    fitxaExemple.appendChild(foto);
+
+    container_bono.appendChild(fitxaExemple);
+
+    var fitxaInfo = document.createElement("div");
+    fitxaInfo.classList.add("materialActivitat");
+    
+    var title = document.createElement("h2");
+    title.innerHTML = omplirIdiomes(bonoRegal.titol);
+    fitxaInfo.appendChild(title);
+
+    for (var i = 0; i < bonoRegal.intro.length; i++) {
+        var paragraph = document.createElement("p");
+        paragraph.innerHTML = omplirIdiomes(bonoRegal.intro[i]);
+        fitxaInfo.appendChild(paragraph);
+    }
+
+    var infoButton = document.createElement("button");
+    infoButton.innerHTML = omplirIdiomes(bonoRegal.mesInfo);
+    infoButton.href = bonoRegal.link;
+    fitxaInfo.appendChild(infoButton);
+
+    container_bono.appendChild(fitxaInfo);
+
+    section.appendChild(container_bono);
 };
 
 function omplirTipusActivitats(){
@@ -238,7 +277,7 @@ function omplirActivitats(a) {
 //-----------------------
 
 function omplirBono(){
-	var section = document.getElementById("contingut");
+	var section = document.getElementById("bono");
 	
 	var title = document.createElement("h1");
     title.innerHTML = omplirIdiomes(bonoRegal.titol);

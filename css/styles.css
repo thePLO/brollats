@@ -195,6 +195,18 @@ section#lloguer::before{
   background-attachment: fixed;
   opacity: 0.3;
 }
+section#bono::before{
+  content: ""; z-index: -1;
+  width: 100%; height:100%;
+  position: absolute;
+  top: 0; left:0;
+  background-image: url("../media/img/bg_bono.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.3;
+}
 
 
 .spacerTOP{
@@ -314,6 +326,20 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   color: white;
 }
 
+section#activitats button{
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  background: #0082d9;
+  color:white;
+  margin:20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+section#activitats button:hover {
+  background-color: rgba(0,0,0,0.3);
+  background: #0098ff;
+}
 /* ------------------------------------------
   Activitat concreta
 --------------------------------------------- */
@@ -405,11 +431,14 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
 
 
 section.bono{
-  margin-top: 79px;
   text-align: left;
 }
 .bono h1{
   text-align: center;
+}
+.bono a{
+  text-decoration: none;
+  color:#0082d9;
 }
 
 /* ------------------------------------------

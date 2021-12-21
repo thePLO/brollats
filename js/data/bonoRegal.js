@@ -21,8 +21,8 @@ let bonoRegal = {
 			"en": ""
 		},
 		{
-			"ca": "1. Busca quina activitat vols regalar, si tens dubtes o prefereixes que t'orientem pots contactar amb nosaltres al 644 433 597 (WhatsApp)",
-			"es": "1. Busca qué actividad quieres regalar, si tienes dudas o prefieres que te orientamos puedes contactar con nosotros al 644 433 597 (WhatsApp)",
+			"ca": "1. Busca quina activitat vols regalar, si tens dubtes o prefereixes que t'orientem pots contactar amb nosaltres al <a href='https://api.whatsapp.com/send?phone=34644433597&text=En%20que%20et%20podem%20ajudar?' target='_blank'>644 433 597 (WhatsApp)</a>",
+			"es": "1. Busca qué actividad quieres regalar, si tienes dudas o prefieres que te orientamos puedes contactar con nosotros al <a href='https://api.whatsapp.com/send?phone=34644433597&text=En%20que%20et%20podem%20ajudar?' target='_blank'>644 433 597 (WhatsApp)</a>",
 			"en": ""
 		},
 		{
@@ -49,5 +49,24 @@ let bonoRegal = {
 	"exemples": [
 		"/brollats/media/img/bonoregal/1.webp",
 		"/brollats/media/img/bonoregal/2.webp"
-	]
+	],
+	"intro": [
+		{
+			"ca": "Arriba el Nadal, els aniversaris, els Sants, el dia de Sant Jordi... i ja no saps què regalar?",
+			"es": "Llega la Navidad, los cumpleaños, los Santos, el día de Sant Jordi... y ¿ya no sabes qué regalar?",
+			"en": ""
+		},
+		{
+			"ca": "Nosaltres t'ho posem ben fàcil! Quina és la millor manera de dir-li a algú que l'estimes? Doncs sí, portant-lo a fer una activitat que saps que li agradarà!",
+			"es": "¡Nosotros te lo ponemos fácil! ¿Cuál es la mejor manera de decirle a alguien que le quieres? Pues sí, ¡llevándolo a hacer una actividad que sabes que le gustará!",
+			"en": ""
+		}
+	],
+	"mesInfo":
+	{
+		"ca": "Més informació",
+		"es": "Más información",
+		"en": "More info"
+	},
+	"link":"activitats/bonoregal.html",
 };
