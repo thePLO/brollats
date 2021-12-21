@@ -38,6 +38,7 @@ function omplirSeccioActivitats2(){
 
     var foto = document.createElement("img");
     foto.src = bonoRegal.exemples[0];
+    foto.height= "310px";
     fitxaExemple.appendChild(foto);
 
     container_bono.appendChild(fitxaExemple);
