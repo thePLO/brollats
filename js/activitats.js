@@ -376,3 +376,13 @@ function omplirMaterial(){
     section.appendChild(container_reserva);
     
 }
+
+function translateMenu(){
+    var menuButtons = document.getElementsByClassName("menu-item");
+    for(var i = 0; i < menuButtons.length-1; i++) {
+        var id = parseInt(menuButtons[i].children[0].id.slice(-1))-1;
+        menuButtons[i].children[0].innerHTML = omplirIdiomes(menuTitols[id]);
+    }
+    //console.log(parseInt(id.slice(-1)));
+    //paragraph.innerHTML = omplirIdiomes(bonoRegal.info[i]);
+}
