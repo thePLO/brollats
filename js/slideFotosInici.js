@@ -98,3 +98,23 @@ var fotos = [
   }
   updateBolas();
   var iniciInterval = setInterval(function(){nextImage();}, 5000);
+
+  let touchstartX = 0
+  let touchendX = 0
+
+
+function handleGesture() {
+  if(Math.abs(touchendX-touchstartX) > 120){
+    if (touchendX < touchstartX) /*alert('swiped left!' )*/nextImage();
+    if (touchendX > touchstartX) /*alert('swiped right!')*/previousImage();
+  }
+}
+
+section.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+})
+
+section.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  handleGesture()
+})

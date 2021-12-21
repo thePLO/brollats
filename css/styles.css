@@ -259,7 +259,7 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   overflow: hidden;
 }
 .activitat:hover{
-  border: solid 1px red;
+  /*border: solid 1px red;*/
 }
 .activitat video {
   width: 100%;
@@ -277,6 +277,9 @@ section#inici #slideIniciButtons a{padding: 4px; cursor: pointer;}
   line-height: 150px;
   background-color: rgba(0,0,0,0.5);
   text-decoration: none;
+}
+.activitat a:hover {
+  background-color: rgba(0,0,0,0.3);
 }
 .activitat h2 {
   color: white;
@@ -612,7 +615,7 @@ a.logo, a.logo_{
   }
 
   .nav-collapse a:hover,
-.nav-collapse .hovered{
+  .nav-collapse .hovered{
   background: #0098ff;
   box-shadow: inset 0px 80px 20px -50px #0082d9;
 }
@@ -693,7 +696,7 @@ a.logo, a.logo_{
   position: fixed;
   top:79px;
   z-index: 2;
-  display: flex;
+  display: none;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -715,6 +718,9 @@ a.logo, a.logo_{
   color: white;
 }
 @media screen and (min-width: 1100px) {
+  .submenu{
+    display: flex;
+  }
   .submenu-item.active {
     box-shadow: inset 0px 70px 20px -50px #0098ff;
   }
