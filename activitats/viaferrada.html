@@ -23,21 +23,28 @@
   <body>
 
     <div id="idiomaSwapp">
-      <i class="fas fa-globe-europe"></i> 
+      <div style='display:inline-block;'>
+        <img class="bandera" src="/media/img/banderes/ca.svg" translate=true lang='ca'>
+        <img class="bandera" src="/media/img/banderes/es.svg" translate=true lang='es' style='display:none;'>
+        <img class="bandera" src="/media/img/banderes/en.svg" translate=true lang='en' style='display:none;'>
+      </div>
+      <!--<i class="fas fa-globe-europe"></i>-->
       <button onclick="changeLanguage('ca')">CAT</button> | 
       <button onclick="changeLanguage('es')">CAS</button> |
       <button onclick="changeLanguage('en')">ENG</button>
-    </div><script src="../js/localized_data.js"></script>
+    </div>
+    <script src="/js/localized_data.js"></script>
+    <script type="text/javascript">updateLangButton();</script>
 
     <header>
-      <a href="../index.html#inici_" class="logo" data-scroll><img src="../media\img\logo_inici.png" class="logo" height="45px"></a>
+      <a href="../index.php#inici_" class="logo" data-scroll><img src="../media\img\logo_inici.png" class="logo" height="45px"></a>
       <nav class="nav-collapse" id="mainMenu" >
         <ul>
-          <li class="menu-item"><a href="../index.html#inici_" data-scroll id="menu1">Inici</a></li>
-          <li class="menu-item active"><a href="../index.html#activitats_" data-scroll id="menu2">Activitats</a></li>
-          <!--<li class="menu-item"><a href="../index.html#calendari_" data-scroll id="menu3">Calendari</a></li>-->
-          <li class="menu-item"><a href="../index.html#lloguer_" data-scroll id="menu4">Lloguer de material</a></li>
-          <!--<li class="menu-item"><a href="../index.html#contacte_" data-scroll id="menu5">Contacte</a></li>-->
+          <li class="menu-item"><a href="../index.php#inici_" data-scroll id="menu1">Inici</a></li>
+          <li class="menu-item active"><a href="../index.php#activitats_" data-scroll id="menu2">Activitats</a></li>
+          <!--<li class="menu-item"><a href="../index.php#calendari_" data-scroll id="menu3">Calendari</a></li>-->
+          <li class="menu-item"><a href="../index.php#lloguer_" data-scroll id="menu4">Lloguer de material</a></li>
+          <li class="menu-item"><a href="../index.php#contacte_" data-scroll id="menu5">Contacte</a></li>
           <li class="menu-item">
             <div class="social"> 
                 <a class="social" href="https://www.instagram.com/brollats/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -69,21 +76,51 @@
     <script src="../js/fixed-responsive-nav.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
-  <footer>
-    <img src="../media/img/logo_inici.png" class="logo">
-    <br><br>
-    <a href="https://www.instagram.com/brollats/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-    <a href="https://www.facebook.com/brollats-101131178785251" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
-    <a href="https://twitter.com/brollats" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=34644433597&text=En%20que%20et%20podem%20ajudar?" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
-    <br>
-    <a href="mailto:info@brollats.cat">info@brollats.cat</a>
-    <br><br>
-    <a href="tel:+34644433597">644 433 597</a>
-    <p style="font-size: 10px">
-      <span lang='ca' translate=true>Si no contestem, deixeu-nos un Whatsapp</span>
-      <span lang='es' translate=true style='display:none;'>Si no contestamos, dejanos un Whatsapp</span>
-      <span lang='en' translate=true style='display:none;'>If we don't answer, send us a Whatsapp</span>
-    </p>
+  <footer id="footer">
+    <div class="container">
+      <div style="min-width:300px">
+        <img src="/media/img/logo_inici.png" class="logo">
+        <br>
+        <a href="https://www.instagram.com/brollats/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.facebook.com/brollats-101131178785251" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://twitter.com/brollats" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=34644433597&text=En%20que%20et%20podem%20ajudar?" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+        <br>
+        <a href="mailto:info@brollats.cat">info@brollats.cat</a>
+        <br><br>
+        <a href="tel:+34644433597">644 433 597</a>
+        <p style="font-size: 10px">
+          <span lang='ca' translate=true>Si no contestem, deixeu-nos un Whatsapp</span>
+          <span lang='es' translate=true style='display:none;'>Si no contestamos, dejanos un Whatsapp</span>
+          <span lang='en' translate=true style='display:none;'>If we don't answer, send us a Whatsapp</span>
+        </p>
+      </div>
+      <div style="min-width:300px">
+        <strong>
+          <br>
+          <span lang='ca' translate=true>Col·laboradors</span>
+          <span lang='es' translate=true style='display:none;'>Colaboradores</span>
+          <span lang='en' translate=true style='display:none;'>Partners</span>
+          <br><br>
+        </strong>
+        <div>
+          <div style="font-size: 10px">
+              <a href="https://www.jombigwall.com/"><img src="/media/img/logos/jom.png" style="height:30px;background-color:black;padding:5px;border-radius:5px;" class="logo"/>
+              <br>
+              <span lang='ca' translate=true>Botiga especialitzada en esports al aire lliure</span>
+              <span lang='es' translate=true style='display:none;'>Tienda especializada en deportes al aire libre</span>
+              <span lang='en' translate=true style='display:none;'>Store specialized in outdoor sports</span>
+          </div>
+          <br>
+          <div style="font-size: 10px">
+              <a href="https://www.escapadesenparella.cat/"><img src="/media/img/logos/escapades.png" style="height:25px;background-color:white;padding:5px;border-radius:5px;" class="logo"/>
+              <br>
+              <span lang='ca' translate=true>Portal especialitzat en escapades</span>
+              <span lang='es' translate=true style='display:none;'>Portal especializado en escapadas</span>
+              <span lang='en' translate=true style='display:none;'>Portal specializing in outdoor plans</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </html>

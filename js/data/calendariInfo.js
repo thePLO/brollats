@@ -5,6 +5,12 @@ let calendariInfo = {
 		es:"Calendario",
 		en:"Calendar"
 	},
+	titolCal:
+	{
+		ca:"Pròximes activitats programades",
+		es:"Próximas actividades programadas",
+		en:"Upcoming scheduled activities"
+	},
 	descripcio:
 	[
 		{

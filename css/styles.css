@@ -1,14 +1,8 @@
-/* =============================================
- *
- *   FIXED RESPONSIVE NAV
- *
- *   (c) 2014 @adtileHQ
- *   http://www.adtile.me
- *   http://twitter.com/adtilehq
- *
- *   Free to use under the MIT License.
- *
- * ============================================= */
+/*
+c1:  #0082d9;
+c2:  #0098ff;
+c3:  #69c2ff;
+*/
 
 body, div,
 h1, h2, h3, h4, h5, h6,
@@ -59,7 +53,12 @@ a:hover {
   color: white;
   font-weight: bold;
 }
-
+.bandera{
+  width: .7em;
+  height: .7em;
+  border-radius: 100%;
+  margin-right: 3px;
+}
 
 
 /* ------------------------------------------
@@ -137,7 +136,7 @@ p{
 }
 
 section {
-  /*border-bottom: 1px dotted #999;*/
+  border-bottom: 3px solid #0082d9;
   text-align: center;
   padding: 0;
   min-height: 100vh;
@@ -207,7 +206,6 @@ section#bono::before{
   background-attachment: fixed;
   opacity: 0.3;
 }
-
 
 .spacerTOP{
   height: 100px;
@@ -444,6 +442,94 @@ section.bono{
 }
 
 /* ------------------------------------------
+  Calendari
+--------------------------------------------- */
+#calBrollats{
+  background-color: rgba(255,255,255,.6);
+}
+#calInfoBrollats{
+  background-color: rgba(255,255,255,.6);
+  width: 400px;
+  height: 500px;
+  border-radius: 4px;
+  padding-bottom: 0.5em;
+}
+.gCalFlow {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  float: left;
+  /*font-size: 90%;*/
+  overflow: hidden;
+  text-decoration: none;
+  padding-bottom: 0.5em;
+}
+.gCalFlow a, .gCalFlow a:visited, .gCalFlow a:hover {
+  color: inherit;
+  _color: black;
+  background-color: transparent;
+  text-decoration: none; 
+}
+.gCalFlow a:hover {
+  /*text-decoration: underline;*/
+}
+.gCalFlow .gcf-title-block {
+  font-weight: bold;
+  /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);*/
+  color: white; 
+}
+.gCalFlow .gcf-title-block a, .gCalFlow .gcf-title-block a:visited, .gCalFlow .gcf-title-block a:hover {
+  _color: white; 
+}
+.gCalFlow .gcf-item-container-block {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 90%; 
+}
+.gCalFlow .gcf-item-block {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px dashed #ccc;
+  padding: 2px;
+  margin: 2px 0;
+  /*transition: padding 0.2s;*/
+}
+.gCalFlow .gcf-item-block:hover {
+  background-color: #69c2ff;
+  color:  white;
+  /*padding-left: 10px;*/
+}
+.gCalFlow .gcf-item-header-block {
+  white-space: nowrap;
+  overflow: hidden; 
+}
+.gCalFlow .gcf-item-date-block {
+  font-size: 76%;
+  /*font-weight: bold;*/
+}
+.gCalFlow .gcf-item-title-block {
+  /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);*/ 
+}
+.gCalFlow .gcf-item-body-block {
+  font-size: 80%;
+  font-color: #999;
+  max-height: 2.45em; 
+}
+.gCalFlow {
+  /*border: 1px solid black;*/
+  border-radius: 4px;
+  color: black; 
+}
+.gCalFlow .gcf-header-block {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 5px;
+  background-color: #0082d9;
+  color:  white;
+}
+
+/* ------------------------------------------
   MATERIAL
 --------------------------------------------- */
 
@@ -492,11 +578,108 @@ section.bono{
   margin-top:2em;
 }
 
+.detall,
 #container_material .detall{
   font-size: 0.8em;
 }
 
+/* ------------------------------------------
+contacte
+--------------------------------------------- */
 
+    #errorContainer{
+        /*border:  black 1px solid;*/
+    }
+    
+    #container_form{
+        width: 90%;
+        max-width: 1400px;
+        min-height: 90%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    form{
+        border-radius: 10px;
+        height: 75%;
+        width: 80%;
+        max-width: 1000px;
+        background-color: rgba(255,255,255,.6);
+        padding: 30px;
+        position: relative;
+        text-align: left;
+    }
+    form label{
+        width:72px;
+        font-weight:bold;
+        display:inline-block;
+        text-align: right;
+        color: #0082d9;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"]{
+        width:180px;
+        padding:3px 10px;
+        border: none;
+        border-bottom: 2px solid #0082d9;
+        background-color: #bfe5ff;
+        margin:8px 0;
+        display:inline-block;
+    }
+
+    form input[type="submit"]{
+        appearance: button;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1.5em;
+        background: #0082d9;
+        color:white;
+        margin:20px;
+        padding: 20px;
+        border-radius: 20px;
+    } 
+
+    form input[type="text"].invalidForm,
+    form input[type="email"].invalidForm,
+    form input[type="tel"].invalidForm,
+    textarea.invalidForm{
+        border-bottom: 2px solid red;
+    }
+
+    form input[type="submit"]:hover{
+        cursor:pointer;
+        background: #0098ff;
+    }
+
+    textarea{
+        width:100%;
+        height:300px;
+        border: none;
+        border-bottom: 2px solid #0082d9;
+        background-color: #bfe5ff;         
+        margin:8px 0;
+        resize:none;
+        display:block;
+    }
+    .formErrors{
+      display: block;
+      position: absolute;
+      color: red;
+      font-size: 0.75em;
+      margin: 0;
+      bottom: 10px;
+      right: 10px;
+    }
 
 /* ------------------------------------------
   FIXED HEADER
@@ -757,12 +940,12 @@ a.logo, a.logo_{
 }
 
 .nav-toggle:before {
-  color: #fff; /* Edit this to change the icon color */
-  font: normal 28px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
+  color: #fff;
+  font: normal 28px/55px "responsivenav";
   text-transform: none;
   text-align: center;
   position: absolute;
-  content: "\2261"; /* Hamburger icon */
+  content: "\2261";
   text-indent: 0;
   speak: none;
   width: 100%;
@@ -772,7 +955,7 @@ a.logo, a.logo_{
 
 .nav-toggle.active:before {
   font-size: 24px;
-  content: "\78"; /* Close icon */
+  content: "\78";
 }
 
 
@@ -828,6 +1011,21 @@ footer{
   text-align: center;
   padding: 2em 2em;
   padding-bottom: 3em;
+}
+footer .container{
+  width: 90%;
+    max-width: 1400px;
+    min-height: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: start;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 footer a{
   text-decoration: none;

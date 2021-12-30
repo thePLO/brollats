@@ -45,5 +45,3 @@ var language = localStorage.getItem('language');
 if (language == null){
   localStorage.setItem('language', 'ca');
 }
-
-updateLangButton();

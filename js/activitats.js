@@ -1,4 +1,4 @@
-let activitats = activitatsData;
+var activitats = activitatsData;
 
 function omplirIdiomes(contingut) {
 	var innerHTML = 
@@ -309,6 +309,7 @@ function omplirBono(){
 }
 
 //-----------------------
+
 function omplirMaterial(){
     var section = document.getElementById("lloguer");
 
@@ -376,6 +377,23 @@ function omplirMaterial(){
     section.appendChild(container_reserva);
     
 }
+
+//-----------------
+
+function omplirCalendari(){
+    var cal_titol = document.getElementById("titolSeccioCal");
+    cal_titol.innerHTML = omplirIdiomes(calendariInfo.titol);
+    var cal_cal_titol = document.getElementById("titolCalSeccioCal");
+    cal_cal_titol.innerHTML = omplirIdiomes(calendariInfo.titolCal);
+    var cal_info = document.getElementById("calInfoBrollats");
+    var stringInner="";
+    for (var i = 0; i < calendariInfo.descripcio.length; i++) {
+        stringInner += "<p>" + omplirIdiomes(calendariInfo.descripcio[i]) + "</p>";
+    }
+    cal_info.innerHTML = stringInner;
+}
+
+//-----------------
 
 function translateMenu(){
     var menuButtons = document.getElementsByClassName("menu-item");

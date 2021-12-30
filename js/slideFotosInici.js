@@ -1,9 +1,9 @@
 var fotos = [
-  "/brollats/media/img/slideInici/foto (1).webp",
-  "/brollats/media/img/slideInici/foto (2).webp",
-  "/brollats/media/img/slideInici/foto (3).webp",
-  "/brollats/media/img/slideInici/foto (7).webp",
-  "/brollats/media/img/slideInici/foto (8).webp"
+  "/media/img/slideInici/foto (1).webp",
+  "/media/img/slideInici/foto (2).webp",
+  "/media/img/slideInici/foto (3).webp",
+  "/media/img/slideInici/foto (7).webp",
+  "/media/img/slideInici/foto (8).webp"
 ]
 
   var section = document.getElementById("imatgesInici");
